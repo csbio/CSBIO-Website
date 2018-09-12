@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: LabMemberArea/
+Disallow: js/
+Disallow: css/
