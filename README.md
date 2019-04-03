@@ -1,10 +1,11 @@
 # CSBIO-Website
 
 ### Editing Instructions
-The lab website is stored on github. Franklin and Lovelace both have downstream
-copies of the repository. If you want to make a change, add a page, a paper,
-or a news item, follow these steps. These steps assume you have a github
-account, and are a member of the csbio team.
+
+The lab website is stored on github. Lovelace has a copy of the repository. If
+you want to make a change, add a page, a paper, or a news item, follow these
+steps. These steps assume you have a github account, and are a member of the
+csbio team.
 
 1. Clone the git repo to your computer:
 ```bash
