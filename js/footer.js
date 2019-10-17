@@ -4,7 +4,7 @@ document.write(
 "           <div class='row'>" +
 "                <div class='col-lg-12'>" +
 "                    <p>Copyright &copy; CSBIOLAB</p>" +
-"                    <p><small>Website made by Jean-Michel Michno (Meesh)  (mich0391@umn.edu)</small></p>" +
+"                    <p><small>Website designed by Henry Ward and Jean-Michel Michno</small></p>" +
 "                </div>" +
 "            </div>" +
 "        </footer>"
