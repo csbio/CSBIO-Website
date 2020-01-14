@@ -26,6 +26,29 @@ body {
     opacity: 0.8;
 }
 
+/* Card classes */
+.card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+/* HR classes */ 
+.large-break{
+	border-top: 2px solid rgba(0,0,0,0.8);
+}
+
+.small-break{
+    border-top: 1px solid rgba(18,18,18,0.2);
+}
+
 /* ==========================================================================
    Navbar
    ========================================================================== */
