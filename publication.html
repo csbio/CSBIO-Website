@@ -3,1973 +3,2372 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Publications</title>
+  <title>Publications</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <!-- Loads Bootstrap 4 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-    <!-- Custom CSS -->
-    <link href="../css/styles.css" rel="stylesheet">
+  <!-- Loads CSS -->
+  <link href="css/styles.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Loads fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 
-    <!-- Using all of this for a bootstrap datatables -->
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">   
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" 
-    href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
-    <script type="text/javascript" 
-    src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" 
-    src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
-    <script type="text/javascript" src="http://cdn.datatables.net/plug-ins/1.10.12/sorting/datetime-moment.js"></script>
+  <!-- Using all of this for a bootstrap datatables -->
+  <!--<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+  </style>
+  <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+  <script type="text/javascript" src="http://cdn.datatables.net/plug-ins/1.10.12/sorting/datetime-moment.js"></script>
 
-    </head>
+</head>
 
-    <body>
-    <body>
-        <!-- Page Content -->
-        <div class="container">
+<body>
 
-            <!-- Page Heading/Breadcrumbs -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Publications
-                        <small></small>
-                    </h1>
-                </div>
-            </div>
-            <!-- /.row -->
-            <div class="row">
-            <div class="col-lg-12">
+  <!-- Navigation bar -->
+  <div id="nav"></div>
+  <script type="text/javascript" src="js/header.js"></script>
 
-        <!-- Navigation bar -->
-        <div id="nav"></div>
-        <script type="text/javascript" src="js/header.js"></script>
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="top-row row">
+      <div class="col-12">
+        <h1 class="page-header">CSBIO Research</h1>
+      </div>
+    </div>
+    <hr class="large-break">
+
+    <!-- /.row -->
+    <div class="row">
+      <div class="col-lg-12">
 
         <table id="example" class="display" cellspacing="0" width="100%">
-        <thead>
+          <thead>
             <tr>
-                <td>
+              <td>
                 Author/Title
                 <br>
                 <small>* denotes equal author contribution</small>
                 <br>
                 <small>^ denotes equal corresponding author contribution</small></td>
-                <td>
+              <td>
                 Journal</td>
-                <td>
+              <td>
                 Date</td>
-                <td>
+              <td>
                 Type</td>
             </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>
-            Simpkins SW, Nelson J, Deshpande R, Li SC, Piotrowski JS, Wilson EH, Gebre AA, 
-            Safizadeh H, Okamoto R, Yoshimura M, Costanzo M, Yashiroda Y, Ohya Y, Osada H, 
-            Yoshida M, Boone C^, Myers CL^
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href=https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006532>
-            Predicting bioprocess targets of chemical compounds through integration of 
-            chemical-genetic and genetic interactions</a></li></ul>
-            </td>
-            <td>PLoS Comput Biol</td>
-            <td>10/2018</td>
-            <td>Article</td>
-        </tr>
-        <tr>
-            <td>
-            VanderSluis B*, Costanzo M*, Billmann M, Ward HN, Myers CL^, Andrews BJ^, Boone C
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href=https://www.sciencedirect.com/science/article/pii/S1369527418300523>
-            Integrating genetic and protein–protein interaction networks maps a
-            functional wiring diagram of a cell</a></li></ul>
-            </td>
-            <td>Current Opinion in Microbiology</td>
-            <td>06/2018</td>
-            <td>Review</td>
-        </tr>
-        <tr>
-            <td>
-               Kuzmin E*, VanderSluis B*, Wang W, Tan G, Deshpande R, Chen Y, Usaj M, Balint A,
-               Mattiazzi Usaj M, van Leeuwen J, Koch EN, Pons C, Dagilis AJ, Pryszlak M, Yang
-               Wang JZ, Hanchard J, Riggi M, Xu K, Heydari H, San Luis BJ, Shuteriqi E, Zhu H,
-               Van Dyk N, Sharifpoor S, Costanzo M, Loewith R, Caudy A, Bolnick D, Brown GW,
-               Andrews BJ^, Boone C^, Myers CL^
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href=http://science.sciencemag.org/content/360/6386/eaao1729>Systematic
-            analysis of complex genetic interactions</a>
-            </li></ul>
-            </td>
-            <td>Science</td>
-            <td>04/2018</td>
-            <td>Article</td>
-        </tr>
-        <tr>
-            <td>
-            Lu Y, Truman W, Liu X, Bethke G, Zhou M, Myers C, Katagiri F, Glazebrook J
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.plantphysiol.org/content/176/4/3046"> Different Modes of Negative Regulation of Plant Immunity by Calmodulin-Related Genes</a>
-            </li></ul>
-            </td>
-            <td>
-            Plant Physiology
-            </td>
-            <td>
-            04/2018
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Can Kayatekin, Audra Amasino, Giorgio Gaglia, Jason Flannick, Julia M Bonner, Saranna Fanning, 
-            Priyanka Narayan, M Inmaculada Barrasa, David Pincus, Dirk Landgraf, Justin Nelson, William R Hesse, 
-            Michael Costanzo, Chad L Myers, Charles Boone, Jose C Florez, Susan Lindquist, AMP T2D-GENES Consortium
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href=https://www.sciencedirect.com/science/article/pii/S0092867418301703>
-            Translocon Declogger Ste24 Protects against IAPP Oligomer-Induced Proteotoxicity</a></li></ul>
-            </td>
-            <td>Cell</td>
-            <td>03/2018</td>
-            <td>Article</td>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                Simpkins SW, Nelson J, Deshpande R, Li SC, Piotrowski JS, Wilson EH, Gebre AA,
+                Safizadeh H, Okamoto R, Yoshimura M, Costanzo M, Yashiroda Y, Ohya Y, Osada H,
+                Yoshida M, Boone C^, Myers CL^
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href=https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006532> Predicting
+                      bioprocess targets of chemical compounds through integration of chemical-genetic and genetic
+                      interactions</a> </li> </ul> </td> <td>PLoS Comput Biol
+              </td>
+              <td>10/2018</td>
+              <td>Article</td>
             </tr>
-        <tr>
-            <td>
-            Nelson J, Simpkins S, Safizadeh H, Li S, Piotrowski J, Hirano H, Yashiroda Y, Osada H, Yoshida M, Boone C, Myers C
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.biorxiv.org/content/early/2017/08/07/112854"> MOSAIC: a chemical-genetic interaction data repository and web resource for exploring chemical modes of action</a>
-            </li></ul>
-            </td>
-            <td>
-            BioRxiv
-            </td>
-            <td>
-            08/2017
-            </td>
-            <td>
-            Pre-print
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Simpkins S, Nelson J, Deshpande R, Li S, Piotrowski J, Wilson E, Gebre A, Okamoto R, Ohya Y, Osada H, Yoshida M, Boone C,Myers C
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.biorxiv.org/content/early/2017/03/01/111252"> Large-scale interpretation of chemical-genetic interaction profiles using a genetic interaction network</a>
-            </li></ul>
-            </td>
-            <td>
-            BioRxiv
-            </td>
-            <td>
-            03/2017
-            </td>
-            <td>
-            Pre-print
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Mechanic L, Lindström S, Daily K, Sieberts S, Amos C, Chen H, Cox N, Dathe M, Feuer E, Guertin M, Hoffman J, Liu Y, Moore J, Myers C, Ritchie M, Schildkraut J, Schumacher F, Witte J, Wang W, Williams S, U4C Challenge Participants , U4C Challenge Data Contributors , Gillanders E
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006945"> Up For A Challenge (U4C): Stimulating innovation in breast cancer genetic epidemiology</a>
-            </li></ul>
-            </td>
-            <td>
-            PLOS Genetics
-            </td>
-            <td>
-            11/2017
-            </td>
-            <td>
-            Editorial
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Wang W, Xu Z, Costanzo M, Boone C, Lange C, Myers C
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006973"> Pathway-based discovery of genetic interactions in breast cancer</a>
-            </li></ul>
-            </td>
-            <td>
-            PLOS Genetics
-            </td>
-            <td>
-            11/2017
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Rizzolo K, Huen J, Kumar A, Phanse S, Vlasblom J, Kakihara Y, Zerineddine H, Minic Z, Snider J, Wang W, Pons C, Seraphim T, Boczek E, Alber S, Costanxo M, Myers C, Stagjar I, Boone C, Houry W
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.sciencedirect.com/science/article/pii/S2211124717312160"> Features of the Chaperone Cellular Network Revealed through Systematic Interaction Mapping</a>
-            </li></ul>
-            </td>
-            <td>
-            Cell Reports
-            </td>
-            <td>
-            11/2017
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Fang G, Wang W, Paunic V, Heydari H, Costanzo M, Liu X, Liu X, Oately B, Steinbach M, Van Ness B, Schadt E, Pankratz N, Boone C, Kumar V, Myers C
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.biorxiv.org/content/early/2017/08/30/182741"> Discovering genetic interactions bridging pathways in genome-wide association studies</a>
-            </li></ul>
-            </td>
-            <td>
-            BioRxiv
-            </td>
-            <td>
-            08/2017
-            </td>
-            <td>
-            Pre-print
-            </td>
-        </tr>
-        <tr>
-            <td>
-            M Usaj, Y Tan, W Wang, B VanderSluis, A Zou, CL Myers^, Costanzo M^, Andrews B^, Boone C^
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.g3journal.org/content/early/2017/03/20/g3.117.040220"> TheCellMap.org: A Web-Accessible Database for Visualizing and Mining the Global Yeast Genetic Interaction Network.</a>
-            </li></ul>
-            </td>
-            <td>
-            G3: Genes, Genomes, Genetics
-            </td>
-            <td>
-            03/2017
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Piotrowski JS*, Li SC*, Deshpande R*, Simpkins SW*, Nelson J, Yashiroda Y, Barber J, Safizadeh H, Wilson E, Okada H, Gebre A, Kubo K, Torres N, LeBlanc M, Andrusiak K, Okamoto R, Yoshimura M, DeRango-Adem E, van Leeuwn J, Shirahige K, Baryshnikova A, Brown AG, Hirano H, Costanzo M, Andrews B, Ohya Y, Osada H^, Yoshida M^, Myers CL^, Boone C^ 
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.nature.com/nchembio/journal/vaop/ncurrent/full/nchembio.2436">Functional Annotation of Chemical Libraries across Diverse Biological Processes</a>
-            </li></ul>
-            </td>
-            <td>
-            Nature chemical biology
-            </td>
-            <td>
-            06/2017
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Traver Hart, Amy Hin Yan Tong, Katie Chan, Jolanda Van Leeuwen, Ashwin Seetharaman, Michael Aregger, Megha Chandrashekhar, 
-            Nicole Hustedt, Sahil Seth, Avery Noonan, Andrea Habsid, Olga Sizova, Lyudmilla Nedyalkova, Ryan Climie, Leanne Tworzyanski, 
-            Keith Lawson, Maria Augusta Sartori, Sabriyeh Alibai, David Tieu, Sanna Masud, Patricia Mero, Alexander Weiss, 
-            Kevin R. Brown, Matej Ušaj, Maximilian Billmann, Mahfuzur Rahman, Michael Costanzo, 
-            Chad L. Myers, Brenda J. Andrews, Charles Boone, Daniel Durocher and Jason Moffat
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.g3journal.org/content/early/2017/06/26/g3.117.041277">Evaluation and Design of Genome-Wide CRISPR/SpCas9 Knockout Screens</a>
-            </li></ul>
-            </td>
-            <td>
-            G3: Genes, Genomes, Genetics
-            </td>
-            <td>
-            06/2017
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Hillmer RA, Tsuda K, Rallapalli G, Asai S, Truman W, Papke MD, Sakaibara H, Jones JDG, Myers CL, Katagiri F
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006639">The highly buffered Arabidopsis immune signaling network conceals the functions of its components</a>
-            </li></ul>
-            </td>
-            <td>
-            Plos Genetics
-            </td>
-            <td>
-            04/2017
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            van Leeuwen J*, Pons C*, Mellor JC, Yamaguchi TN, Friesen H, Koschwanez J, Usaj MM, Pechlaner M, Takar M, Usaj M, VanderSluis B, Andrusiak K, Bansal P, Baryshnikova A, Boone CE, Cao J, Cote A, Gebbia M, Horecka G, Horecka I, Kuzmin E, Legro N, Liang W, van Lieshout N, McNee M, Luis BJS, Shaeri F, Shuteriqi E, Sun S, Yang L, Youn JY, Yuen M, Costanzo M, Gingras AC, Aloy P, Oostenbrink C, Murray A, Graham TR, Myers CL^, Andrews BJ^, Roth FP^, Boone C^
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://science.sciencemag.org/content/354/6312/aag0839">Exploring genetic suppression interactions on a global scale</a>
-            </li></ul>
-            </td>
-            <td>
-            Science
-            </td>
-            <td>
-            11/2016
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Li L, Briskine R, Schaefer R, Schnable PS, Myers CL, Flagel LE, Springer NM, Muehlbauer GJ
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-016-3194-0"> Co-expression network analysis of duplicate genes in maize (Zea mays L) reveals no subgenome bias</a>
-            </li></ul>
-            </td>
-            <td>
-            BMC Genomics
-            </td>
-            <td>
-            10/2016
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Bass JIF, Pons C, Kozlowski L, Reece-Hoyes JS, Shrestha S, Holdorf AD, Mori A, Myers CL, Walhout AJM: A gene-centered C
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5081483/pdf/MSB-12-884.pdf">C. elegans protein-DNA interaction network provides a framework for functional predictions</a>
-            </li></ul>
-            </td>
-            <td>
-            Mol Syst Biol
-            </td>
-            <td>
-            10/2016
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            M Costanzo*, B VanderSluis*, EN Koch*, A Baryshnikova*, C Pons*, G Tan*, W Wang, M Usaj, J Hanchard, SD Lee, V Pelechano, EB Styles, M Billmann, J van Leeuwen, N van Dyk, ZY Lin, E Kuzmin, J Nelson, JS Piotrowski, T Srikumar, S Bahr, Y Chen, R Deshpande, CF Kurat, SC Li, Z Li, M Mattiazzi Usaj, H Okada, N Pascoe, BJ San Luis, S Sharifpoor, E Shuteriqi, SW Simpkins, J Snider, HG Suresh, Y Tan, H Zhu, N Malod-Dognin, V Janjic, N Przulj, OG Troyanskaya, I Stagljar, T Xia, Y Ohya, AC Gingras, B Raught, M Boutros, LM Steinmetz, CL Moore, AP Rosebrock, AA Caudy, CL Myers^, B Andrews^, C Boone^
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://science.sciencemag.org/content/353/6306/aaf1420"> A global genetic interaction network maps a wiring diagram of cellular function</a>
-            </li></ul>
-            </td>
-            <td>
-            Science
-            </td>
-            <td>
-            09/2016
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Styles EB, Founk KJ, Zamparo LA, Sing TL, Altintas D, Ribeyre C, Ribaud V, Rougemont J, Mayhew D, Costanzo M, Usaj M, Verster AJ, Koch EN, Novarina D, Graf M, Luke B, Muzi-Falconi M, Myers CL, Mitra RD, Shore D, Brown GW, Zhang Z, Boone C, Andrews BJ
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.cell.com/cell-systems/abstract/S2405-4712(16)30263-0?_returnURL=http%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2405471216302630%3Fshowall%3Dtrue">Exploring Quantitative Yeast Phenomics with Single-Cell Analysis of DNA Damage Foci</a>
-            </li></ul>
-            </td>
-            <td>
-             Cell Systems
-             </td>
-             <td>
-             09/2016
-             </td>
-             <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Mitra AK, Stessman HAF, Schaefer RJ, Wang W, Myers CL, Van Ness B, Beiraghi S
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4876112/pdf/fgene-07-00088.pdf">Fine-Mapping of 18q2.1 Locus Identifies Single Nucleotide Polymorphisms Associated with Nonsyndromic Cleft Lip with or without Cleft Palate</a>
-            </li></ul>
-            </td>
-            <td>
-            Frontiers in Genetics
-            </td>
-            <td>
-            05/2016
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Schaefer R, Michno J, Myers CL
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.sciencedirect.com/science/article/pii/S1874939916301663"> Unraveling gene function in agricultural species using gene co-expression networks</a>
-            </li></ul>
-            </td>
-            <td>
-            Biochimica et Biophysica Acta- Gene Regulatory Mechanisms
-            </td>
-            <td>
-            01/2016
-            </td>
-            <td>
-            Review
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Dickinson Q, Bottoms S, Hinchman L, McIlwain S, Li S, Myers CL, Boone C, Coon JJ, Hebert A, Sato TK, Landick R, Piotrowski JS
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://microbialcellfactories.biomedcentral.com/articles/10.1186/s12934-016-0417-7"> Mechanism of imidazolium ionic liquids toxicity in Saccharomyces cerevisiae and rational engineering of a tolerant, xylose-fermenting strain</a>
-            </li></ul>
-            </td>
-            <td>
-            Microb Cell Fact
-            </td>
-            <td>
-            01/2016
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Piotrowski JS, Simpkins SW, Li SC, Deshpande R, McIlwain SJ, Ong IM, Myers CL, Boone C, Andersen RJ
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/25618354"> Chemical genomic profiling via barcode sequencing to predict compound mode of action</a>
-            </li></ul>
-            </td>
-            <td>
-            Methods Mol Biol
-            </td>
-            <td>
-            12/2015
-            </td>
-            <td>
-            Review
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Serate J, Xie D, Pohlmann E, Donald C, Shabani M, Hinchman L, Higbee A, Mcgee M, La Reau A, Klinger GE, Li S, Myers CL, Boone C, Bates DM, Cavalier D, Eilert D, Oates LG, Sanford G, Sato TK, Dale B, Landick R, Piotrowski J, Ong RG, Zhang YP
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://biotechnologyforbiofuels.biomedcentral.com/articles/10.1186/s13068-015-0356-2"> Controlling microbial contamination during hydrolysis of AFEX-pretreated corn stover and switchgrass: effects on hydrolysate composition, microbial response and fermentation</a>
-            </li></ul>
-            </td>
-            <td>
-            Biotechnology for Biofuels
-            </td>
-            <td>
-            11/2015
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Becker JR, Pons C, Nguyen HD, Costanzo M, Boone C, Myers CL, Bielinsky AK
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1005659"> Genetic Interactions Implicating Postreplicative Repair in Okazaki Fragment Processing</a>
-            </li></ul>
-            </td>
-            <td>
-            PLoS Genet
-            </td>
-            <td>
-            11/2015
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            LT MacNeil, C Pons, HE Arda, GE Giese, CL Myers, AJM Walhout
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.cell.com/cell-systems/abstract/S2405-4712(15)00056-3"> Transcription Factor Activity Mapping of a Tissue-Specific In Vivo Gene Regulatory Network</a>
-            </li></ul>
-            </td>
-            <td>
-            Cell Systems
-            </td>
-            <td>
-            08/2015
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Piotrowski JS, Okada H, Lu F, Li SC, Hinchman L, Ranjan A, Smith DL, Kigbee AJ, Ulbrich A, Coon JJ, Deshpande R, Bukhman YV, McIlwain S, Ong IM, Myers CL, Boone C, Landick R, Ralph J, Kabbage M, Ohya Y
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.pnas.org/content/112/12/E1490"> Plant-derived antifungal agent poacic acid targets β-1,3-glucan</a>
-            </li></ul>
-            </td>
-            <td>
-            PNAS
-            </td>
-            <td>
-            02/2015
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Pons C, Costanzo M, Boone C, Myers CL
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=1107013844"> Systems Genetics - linking genotypes and phenotypes: Computational paradigms for analyzing genetic interaction networks</a>
-            </li></ul>
-            </td>
-            <td>
-            Cambridge University Press
-            </td>
-            <td>
-            10/2015
-            </td>
-            <td>
-            Book
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Abbey DA, Funt J, Lurie-Weinberger MN, Thompson DA, Regev A, Myers CL, Berman J
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-014-0100-8"> YMAP: a pipeline for visualization of copy number variation and loss of heterozygosity in eukaryotic pathogens</a>
-            </li></ul>
-            </td>
-            <td>
-            Genome Medicine
-            </td>
-            <td>
-            11/2014
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Brown JCS, Nelson J, VanderSluis B, Desphande R, Butts A, Kagan S, Polacheck I, Krysan DJ, Myers CL^, Madhani HD^
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.cell.com/cell/abstract/S0092-8674(14)01371-3?_returnURL=http%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867414013713%3Fshowall%3Dtrue"> Unraveling the biology of a fungal meningitis pathogen using chemical genetics</a>
-            </li></ul>
-            </td>
-            <td>
-            Cell
-            </td>
-            <td>
-            10/2014
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Wyche TP, Piotrowski JS, Hou Y, Braun D, Deshpande R, McIlwain S, Ong IM, Myers CL, Guzei IA, Westler WA, Andes DR, Bugni, TS Forazoline A 
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://onlinelibrary.wiley.com/doi/10.1002/ange.201405990/full">Marine‐Derived Polyketide with Antifungal In Vivo Efficacy</a>
-            </li></ul>
-            </td>
-            <td>
-            Angewandte Chemie
-            </td>
-            <td>
-            09/2014
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Stessman HAF, Lulla A, Xia T, Mitra A, Harding T, Mansoor A, Myers CL, Van Ness BG, Dolloff NG
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.nature.com/leu/journal/v28/n11/full/leu2014214a.html"> High-throughput drug screening identifies compounds and molecular strategies for targeting proteasome inhibitor-resistant multiple myeloma</a>
-            </li></ul>
-            </td>
-            <td>
-            Leukemia
-            </td>
-            <td>
-            07/2014
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            DiPrima S, Haarer B, Viggiano S, Pons C, Myers CL, Amberg DC
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.g3journal.org/content/4/8/1491.long"> Linking genetics to structural biology: complex heterozygosity screening with actin alanine scan alleles identifies functionally related surfaces on yeast actin</a>
-            </li></ul>
-            </td>
-            <td>
-            G3
-            </td>
-            <td>
-            08/2014
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Schaefer RJ, Briskine R, Springer NM, Myers CL^
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0099193"> Discovering functional modules across diverse maize transcriptomes using COB, the Co-Expression Browser</a>
-            </li></ul>
-            </td>
-            <td>
-            PLoS ONE
-            </td>
-            <td>
-            06/2014
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Bansal M, Yang J, Karan C, Menden MP, Costello JC, Tang H, Xiao G, Li Y, Allen J, Zhong R, Chen B, Kim M, Wang T, Heiser LM, Realubit R, Mattioli M, Alvarez MJ, Shen Y, NCI-DREAM Community, Gallahan D, Singer D, Saez-Rodriguez J, Xie Y, Stolovitzky G, Califano A
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.nature.com/nbt/journal/v32/n12/full/nbt.3052.html"> A community computational challenge to predict the activity of pairs of compounds</a>
-            </li></ul>
-            </td>
-            <td>
-            Nat Biotechnol
-            </td>
-            <td>
-            09/2014
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Costello JC, Heiser LM, Georgii E, Gönen M, Menden MP, Wang NJ, Bansal M, Ammad-Ud-Din M, Hintsanen P, Khan SA, Mpindi JP, Kallioniemi O, Honkela A, Aittokallio T, Wennerberg K, NCI DREAM Community, Collins JJ, Gallahan D, Singer D, Saez-Rodriguez J, Kaski S, Gray JW, Stolovitzky G
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.nature.com/nbt/journal/v32/n12/full/nbt.2877.html"> A community effort to assess and improve drug sensitivity prediction algorithms</a>
-            </li></ul>
-            </td>
-            <td>
-            Nat Biotechnol
-            </td>
-            <td>
-            06/2014
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            VanderSluis B*, Hess DC*, Pesyna C, Krumholz E, Syed T, Szappanos B, Nislow C, Troyanskaya OG, Myers CL^, Caudy AA^
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-4-r64"> Broad metabolic sensitivity profiling of a prototrophic yeast deletion collection</a>
-            </li></ul>
-            </td>
-            <td>
-            Genome Biology
-            </td>
-            <td>
-            04/2014
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Kim Y, Tsuda K, Igarashi D, Hillmer RA, Sakakibara H, Myers CL, Katagiri F
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.cell.com/cell-host-microbe/abstract/S1931-3128(13)00435-6"> Mechanisms underlying robustness and tunability in a plant immune signaling network</a>
-            </li></ul>
-            </td>
-            <td>
-            Cell Host & Microbe
-            </td>
-            <td>
-            01/2014
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Fuxman Bass JI, Diallo A, Nelson J, Soto JM, Myers CL, Walhout AJM
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.nature.com/nmeth/journal/v10/n12/full/nmeth.2728.html"> Using networks to measure similarity between genes: association index selection</a>
-            </li></ul>
-            </td>
-            <td>
-            Nature Methods
-            </td>
-            <td>
-            11/2013
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Fung SY, Sofiyev V, Schneiderman J, Hirschfeld AF, Victor RE, Woods K, Piotrowski JS, Deshpande R, Li SC, de Voogd NJ, Myers CL, Boone B, Andersen RJ, Turvey SE
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://pubs.acs.org/doi/abs/10.1021/cb400740c"> Unbiased Screening of Marine Sponge Extracts for Anti-inflammatory Agents Combined with Chemical Genomics Identifies Girolline as an Inhibitor of Protein Synthesis</a>
-            </li></ul>
-            </td>
-            <td>
-            ACS Chemical Biology
-            </td>
-            <td>
-            10/2013
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Baryshnikova A, Vandersluis B, Costanzo M, Myers CL, Cha RS, Andrews B, Boone C
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/23979930"> Global Linkage Map Connects Meiotic Centromere Function to Chromosome Size in Budding Yeast</a>
-            </li></ul>
-            </td>
-            <td>
-            G3
-            </td>
-            <td>
-            10/2013
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Eichten SR, Briskine R, Song J, Li Q, Swanson-Wagner R, Hermanson PJ, Waters AJ, Starr E, West PT, Tiffin P, Myers CL, Vaughn MW, Springer NM
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.plantcell.org/content/early/2013/08/02/tpc.113.114793.full.pdf+html"> Epigenetic and Genetic Influences on DNA Methylation Variation in Maize Populations</a>
-            </li></ul>
-            </td>
-            <td>
-            Plant Cell
-            </td>
-            <td>
-            08/2013
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Deshpande R*, Asiedu M*, Klebig M, Sutor S, Kuzmin E, Nelson J, Piotrowski J, Shin SH, Yoshida M, Costanzo M, Boone C, Wigle DA^, Myers CL^
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/23980094"> A comparative genomic approach for identifying synthetic lethal interactions in human cancer</a>
-            </li></ul>
-            </td>
-            <td>
-            Cancer Research
-            </td>
-            <td>
-            08/2013
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Deshpande R, VanderSluis B, Myers CL
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0068664"> Comparison of profile similarity measures for genetic interaction networks</a>
-            </li></ul>
-            </td>
-            <td>
-            PLoS ONE
-            </td>
-            <td>
-            07/2013
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Stessman HA, Baughn LB, Sarver A, Xia T, Deshpande R, Mansoor A, Linden MA, Doloff N, Janz S, Myers CL, Van Ness B
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/23536725"> Profiling bortezomib resistance and identification of secondary therapies in a mouse myeloma model</a>
-            </li></ul>
-            </td>
-            <td>
-            Mol Cancer Ther
-            </td>
-            <td>
-            06/2013
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Nguyen HD, Becker J, Thu YM, Costanzo M, Koch EN, Smith S, Myung K, Myers CL, Boone C, Bielinsky AK
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066379"> Unligated Okazaki Fragments Induce PCNA Ubiquitination and a Requirement for Rad59-Dependent Replication Fork Progression</a>
-            </li></ul>
-            </td>
-            <td>
-            PLoS ONE
-            </td>
-            <td>
-            06/2013
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Reece-Hoyes JS*, Pons C*, Diallo A, Mori A, Shrestha S, Kadreppa S, Nelson J, Diprima S, Dricot A, Lajoie BR, Ribeiro PS, Weirauch MT, Hill DE, Hughes TR, Myers CL^, Walhout AJ^
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/23791784"> Extensive Rewiring and Complex Evolutionary Dynamics in a C elegans Multiparameter Transcription Factor Network</a>
-            </li></ul>
-            </td>
-            <td>
-            Mol Cell
-            </td>
-            <td>
-            06/2013
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            A Baryshnikova, M Costanzo, CL Myers, B Andrews, C Boone
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/23808365"> Genetic Interaction Networks: Toward an Understanding of Heritability</a>
-            </li></ul>
-            </td>
-            <td>
-            Annual Review of Genomics and Human Genetics
-            </td>
-            <td>
-            06/2013
-            </td>
-            <td>
-            Review
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Wagih O, Usaj M, Baryshnikova A, VanderSluis B, Kuzmin E, Costanzo M, Myers CL, Andrews BJ, Boone CM, Parts L
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/23677617"> SGAtools: one-stop analysis and visualization of array-based genetic interaction screens</a>
-            </li></ul>
-            </td>
-            <td>
-            Nucleic Acids Research
-            </td>
-            <td>
-            05/2013
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Colak R, Kim T, Michaut M, Sun M, Irimia M, Bellay J, Myers CL, Blencowe BJ, Kim PM
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003030"> Distinct Types of Disorder in the Human Proteome: Functional Implications for Alternative Splicing</a>
-            </li></ul>
-            </td>
-            <td>
-            PLoS Comput Biol
-            </td>
-            <td>
-            04/2013
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Sekhon RS, Briskine R, Hirsch CN, Myers CL, Springer NM, Buell CR, de Leon N, Kaeppler SM
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061005"> Maize Gene Atlas Developed by RNA Sequencing and Comparative Evaluation of Transcriptomes Based on RNA Sequencing and Microarrays</a>
-            </li></ul>
-            </td>
-            <td>
-            PLoS ONE
-            </td>
-            <td>
-            04/2013
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Alver B, Jauert PA, Brosnan L, O’Hehir M, VanderSluis B, Myers CL, Kirkpatrick DT
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/23550123"> A whole genome screen for minisatellite stability genes in stationary phase yeast cells</a>
-            </li></ul>
-            </td>
-            <td>
-            G3
-            </td>
-            <td>
-            04/2013
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Makarevitch I, Eichten SR, Briskine R, Danilevskaya ON, Meeley RB, Myers CL, Vaughn MW, Springer NM
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/23463775"> Genomic distribution of maize facultative heterochromatin marked by trimethylation of H3K27</a>
-            </li></ul>
-            </td>
-            <td>
-            Plant Cell
-            </td>
-            <td>
-            03/2013
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Koch E, Costanzo M, Bellay J, Deshpande R, Chatfield-Reed K, Chua G, D’Urso G, Andrews B, Boone C, Myers CL
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2012-13-7-r57"> Conserved rules govern genetic interaction degree across species</a>
-            </li></ul>
-            </td>
-            <td>
-            Genome Biol
-            </td>
-            <td>
-            07/2012
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Swanson-Wagner R*, Briskine R*, Schaefer R, Hufford MB, Ross-Ibarra J, Myers CL, Tiffin P, Springer NM
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.pnas.org/content/109/29/11878.abstract"> Reshaping of the maize transcriptome by domestication</a>
-            </li></ul>
-            </td>
-            <td>
-            Proc Natl Acad Sci
-            </td>
-            <td>
-            06/2012
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Davidson MB, Katou Y, Keszthelyi A, Sing TL, Xia T, Ou J, Vaisica JA, Thevakumaran N, Marjavaara L, Myers CL, Chabes A, Shirahige K, Brown GW
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/22234187"> Endogenous DNA replication stress results in expansion of dNTP pools and a mutator phenotype</a>
-            </li></ul>
-            </td>
-            <td>
-            EMBO J
-            </td>
-            <td>
-            02/2012
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Sharifpoor S, van Dyk D, Costanzo M, Baryshnikova A, Friesen H, Douglas AC, Youn JY, Vandersluis B, Myers CL, Papp B, Boone C, Andrews BJ
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/22282571"> Functional wiring of the yeast kinome revealed by global analysis of genetic network motifs</a>
-            </li></ul>
-            </td>
-            <td>
-            Genome Res
-            </td>
-            <td>
-            01/2012
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Costanzo M, Baryshnikova A, VanderSluis B, Andrews B, Myers CL, Boone C
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.elsevier.com/books/handbook-of-systems-biology/walhout/978-0-12-385944-0"> Genetic Networks: Handbook of Systems Biology Concepts and Insights</a>
-            </li></ul>
-            </td>
-            <td>
-            Elsevier
-            </td>
-            <td>
-            11/2012
-            </td>
-            <td>
-            Book
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Cokol M, Chua HN, Tasan M, Mutlu B, Weinstein ZB, Suzuki Y, Nergiz ME, Costanzo M, Baryshnikova A, Giaever G, Nislow C, Myers CL, Andrews BJ, Boone C, Roth FP
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/22068327"> Systematic exploration of synergistic drug pairs</a>
-            </li></ul>
-            </td>
-            <td>
-            Mol Syst Biol
-            </td>
-            <td>
-            11/2011
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Reece-Hoyes JS, Diallo A, Lajoie B, Kent A, Shrestha S, Kadreppa S, Pesyna C, Dekker J, Myers CL, Walhout AJM
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/22037705"> Enhanced yeast one-hybrid (eY1H) assays for high-throughput gene-centered regulatory network mapping</a>
-            </li></ul>
-            </td>
-            <td>
-            Nature Methods
-            </td>
-            <td>
-            10/2011
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Bellay J, Atluri G, Sing TL, Toufighi K, Costanzo M, Ribeiro PS, Pandey G, Baller J, VanderSluis B, Michaut M, Han S, Kim P, Brown GW, Andrews BJ, Boone C, Kumar V, Myers CL
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/21715556"> Putting genetic interactions in context through a global modular decomposition</a>
-            </li></ul>
-            </td>
-            <td>
-            Genome Research
-            </td>
-            <td>
-            08/2011
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Williams DE, Dalisay DS, Patrick BO, Matainaho T, Andrusiak K, Deshpande R, Myers CL, Piotrowski JS, Boone C, Yoshida M, Andersen RJ
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://pubs.acs.org/doi/abs/10.1021/ol2014494"> Padanamides A and B, Highly Modified Linear Tetrapeptides Produced in Culture by a Streptomyces sp Isolated from a Marine Sediment</a>
-            </li></ul>
-            </td>
-            <td>
-            Organic Letters
-            </td>
-            <td>
-            07/2011
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Szappanos B, Kovacs K, Szamecz B, Honti F, Costanzo M, Baryshnikova A, Gelius-Dietrich G, Lercher MJ, Jelasity M, Myers CL, Andrews BJ, Boone C, Oliver SG, Pal C, Papp B
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.nature.com/ng/journal/v43/n7/full/ng.846.html"> An integrated approach to characterize genetic interaction networks in yeast metabolism</a>
-            </li></ul>
-            </td>
-            <td>
-            Nature Genetics
-            </td>
-            <td>
-            05/2011
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Li Z, Vizeacoumar FJ, Bahr S, Li J, Warringer J, Vizeacoumar FS, Min R, VanderSluis B, Bellay J, Devit M, Fleming JA, Stephens A, Haase J, Lin ZY, Baryshnikova A, Lu H, Yan Z, Jin K, Barker S, Datti A, Giaever G, Nislow C, Bulawa C, Myers CL, Costanzo M, Gingras AC, Zhang Z, Blomberg A, Bloom K, Andrews B, Boone C
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.nature.com/nbt/journal/v29/n4/full/nbt.1832.html"> Systematic exploration of essential yeast gene function with temperature-sensitive mutants</a>
-            </li></ul>
-            </td>
-            <td>
-            Nature Biotechnology
-            </td>
-            <td>
-            03/2011
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Bellay J*, Han S*, Michaut M*, Kim T, Costanzo M, Andrews BJ, Boone C, Bader GD, Myers CL^, Kim PM^
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/21324131"> Bringing order to protein disorder through comparative genomics and genetic interactions</a>
-            </li></ul>
-            </td>
-            <td>
-            Genome Biol
-            </td>
-            <td>
-            02/2011
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Michaut M, Baryshnikova A, Costanzo M, Myers CL, Andrews BJ, Boone C, Bader GD
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1001092"> Protein complexes are central in the yeast genetic landscape</a>
-            </li></ul>
-            </td>
-            <td>
-             PLoS Comput Biol
-             </td>
-             <td>
-             02/2011
-             </td>
-             <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Desphande R, Sharma S, Hu WS, Verfaillie CM, Myers CL
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1001028"> A Scalable Approach for Discovering Conserved Active Subnetworks across Species</a>
-            </li></ul>
-            </td>
-            <td>
-            PLoS Comput Biol
-            </td>
-            <td>
-            12/2010
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            VanderSluis B, Bellay J, Musso G, Costanzo M, Papp B, Vizeacoumar FJ, Baryshnikova A, Andrews B, Boone C, Myers CL
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/21081923"> Genetic interactions reveal the evolutionary trajectories of duplicate genes</a>
-            </li></ul>
-            </td>
-            <td>
-            Mol Syst Biol
-            </td>
-            <td>
-            11/2010
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Costanzo M, Baryshnikova A, Myers CL, Andrews B, Boone C
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/21111604"> Charting the genetic interaction map of a cell</a>
-            </li></ul>
-            </td>
-            <td>
-            Curr Opin Biotechnol
-            </td>
-            <td>
-            11/2010
-            </td>
-            <td>
-            Review
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Baryshnikova A, Costanzo M, Dixon S, Vizeacoumar FJ, Myers CL, Andrews B, Boone C
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/21111604"> Synthetic genetic array (SGA) analysis in Saccharomyces cerevisiae and Schizosaccharomyces pombe</a>
-            </li></ul>
-            </td>
-            <td>
-            Methods Enzymol
-            </td>
-            <td>
-            11/2010
-            </td>
-            <td>
-            Review
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Baryshnikova A, Costanzo M, Kim Y, Ding H, Koh J, Toufighi K, Youn JY, Ou J, San Luis BJ, Bandyopadhyay S, Hibbs M, Hess D, Gingras AC, Bader GD, Troyanskaya OG, Brown GW, Andrews B, Boone C, Myers CL
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://www.nature.com/nmeth/journal/v7/n12/full/nmeth.1534.html"> Quantitative analysis of fitness and genetic interactions in yeast on a genome scale</a>
-            </li></ul>
-            </td>
-            <td>
-            Nature Methods
-            </td>
-            <td>
-            10/2010
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Pandey G, Zhang B, Chang AN, Myers CL, Zhu J, Kumar V, Schadt EE
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000928"> An integrative multi-network and multi-classifier approach to predict genetic interactions</a>
-            </li></ul>
-            </td>
-            <td>
-            PLoS Comput Biol
-            </td>
-            <td>
-            09/2010
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Costanzo M, Baryshnikova A, Bellay J, Kim Y, Spear ED, Sevier CS, Ding H, Koh JL, Toufighi K, Mostafavi S, Prinz J, St Onge RP, VanderSluis B, Makhnevych T, Vizeacoumar FJ, Alizadeh S, Bahr S, Brost RL, Chen Y, Cokol M, Deshpande R, Li Z, Lin ZY, Liang W, Marback M, Paw J, San Luis BJ, Shuteriqi E, Tong AH, van Dyk N, Wallace IM, Whitney JA, Weirauch MT, Zhong G, Zhu H, Houry WA, Brudno M, Ragibizadeh S, Papp B, Pal C, Roth FP, Giaever G, Nislow C, Troyanskaya OG, Bussey H, Bader GD, Gingras AC, Morris QD, Kim PM, Kaiser CA, Myers CL, Andrews BJ, Boone C
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://science.sciencemag.org/content/327/5964/425"> The genetic landscape of a cell</a>
-            </li></ul>
-            </td>
-            <td>
-            Science
-            </td>
-            <td>
-            01/2010
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Koh JL, Ding H, Costanzo M, Baryshnikova A, Toufighi K, Bader GD, Myers CL, Andrews BJ, Boone C
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/19880385"> DRYGIN: a database of quantitative genetic interaction networks in yeast</a>
-            </li></ul>
-            </td>
-            <td>
-            Nucleic Acids Res
-            </td>
-            <td>
-            01/2010
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Atluri G, Bellay J, Pandey G, Myers CL, Kumar V
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://vk.cs.umn.edu/dmbio/publications/Atluri_BIOKDD10.pdf"> Discovering coherent value bicliques in genetic interaction data</a>
-            </li></ul>
-            </td>
-            <td>
-            9th International Workshop on Data Mining in Bioinformatics
-            </td>
-            <td>
-            07/2010
-            </td>
-            <td>
-            Conference
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Fang G, Kuang R, Pandey G, Steinbach M, Myers CL, Kumar V
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/19908367"> Subspace differential coexpression analysis: problem definition and a general approach</a>
-            </li></ul>
-            </td>
-            <td>
-            Pac Symp Biocomput
-            </td>
-            <td>
-            01/2010
-            </td>
-            <td>
-            Conference
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Huttenhower C*, Hibbs MA*, Myers CL*, Caudy AA, Hess DC, Troyanskaya OG
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/19561015"> The impact of incomplete knowledge on evaluation: an experimental benchmark for protein function prediction</a>
-            </li></ul>
-            </td>
-            <td>
-            Bioinformatics
-            </td>
-            <td>
-            09/2009
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Myers CL, Chiriac C, Troyanskaya OG
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2005-6-13-r114"> Discovering biological networks from diverse functional genomic data</a>
-            </li></ul>
-            </td>
-            <td>
-            Methods Mol Biol
-            </td>
-            <td>
-            07/2009
-            </td>
-            <td>
-            Review
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Pandey G, Myers CL, Kumar V
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-142"> Incorporating functional inter-relationships into protein function prediction algorithms</a>
-            </li></ul>
-            </td>
-            <td>
-            BMC Bioinformatics
-            </td>
-            <td>
-            05/2009
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Huttenhower C, Myers CL, Hibbs MA, Troyanskaya OG
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/19521830/"> Computational analysis of the yeast proteome: understanding and exploiting functional specificity in genomic data</a>
-            </li></ul>
-            </td>
-            <td>
-            Methods Mol Biol
-            </td>
-            <td>
-            04/2009
-            </td>
-            <td>
-            Review
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Hess DC, Myers CL*, Huttenhower C*, Hibbs MA*, Hayes AP, Paw J, Clore JJ, Mendoza RM, Luis BS, Nislow C, Giaever G, Costanzo M, Troyanskaya OG, Caudy AA
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000407"> Computationally driven, quantitative experiments discover genes required for mitochondrial biogenesis</a>
-            </li></ul>
-            </td>
-            <td>
-            PLoS Genet
-            </td>
-            <td>
-            03/2009
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Hibbs MA*, Myers CL*, Huttenhower C*, Hess DC, Li K, Caudy AA, Troyanskaya OG
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000322"> Directing experimental biology: a case study in mitochondrial biogenesis</a>
-            </li></ul>
-            </td>
-            <td>
-            PLoS Comput Biol
-            </td>
-            <td>
-            03/2009
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Pandey G, Atluri G, Steinbach M, Myers C, Kumar V
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://pdfs.semanticscholar.org/93a6/ddbc4715b878e87141c86b6eae5096cc9355.pdf"> An association analysis approach to biclustering</a>
-            </li></ul>
-            </td>
-            <td>
-            15th ACM SIGKDD International Conference
-            </td>
-            <td>
-            06/2009
-            </td>
-            <td>
-            Conference
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Bellay J, VanderSluis B, Kim Y, Bandyopadhyay S, Myers CL
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://ieeexplore.ieee.org/document/5174329/"> Characterization of systems-level organization through mining large-scale genetic interaction networks</a>
-            </li></ul>
-            </td>
-            <td>
-             IEEE Workshop on Genomic Signal Processing and Statistics
-             </td>
-             <td>
-             05/2009
-             </td>
-             <td>
-            Conference
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Atluri G, Pandey G, Bellay J, Myers C, Kumar V
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.cs.umn.edu/research/technical_reports/view/09-020"> Two-Dimensional Association Analysis For Finding Constant Value Biclusters In Real-Valued Data</a>
-            </li></ul>
-            </td>
-            <td>
-            Department of Computer Science and Engineering
-            </td>
-            <td>
-            09/2009
-            </td>
-            <td>
-            Conference
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Dixon SJ, Fedyshyn Y, Koh JL, Prasad TS, Chahwan C, Chua G, Toufighi K, Baryshnikova A, Hayles J, Hoe KL, Kim DU, Park HO, Myers CL, Pandey A, Durocher D, Andrews BJ, Boone C
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/18931302"> Significant conservation of synthetic lethal genetic interaction networks between distantly related eukaryotes</a>
-            </li></ul>
-            </td>
-            <td>
-            Proc Natl Acad Sci
-            </td>
-            <td>
-            10/2008
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Guan Y, Myers CL, Hess DC, Barutcuoglu Z, Caudy AA, Troyanskaya OG
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/18613947"> Predicting gene function in a hierarchical context with an ensemble of classifiers</a>
-            </li></ul>
-            </td>
-            <td>
-            Genome Biol
-            </td>
-            <td>
-            06/2008
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Guan Y, Myers CL, Lu R, Lemischka IR, Bult CJ, Troyanskaya OG
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000165"> A genomewide functional network for the laboratory mouse</a>
-            </li></ul>
-            </td>
-            <td>
-            PLoS Comput Biol
-            </td>
-            <td>
-            09/2008
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Pena-Castillo L, Tasan M, Myers CL, Lee H, Joshi T, Zhang C, Guan Y, Leone M, Pagnani A, Kim WK, Krumpelman C, Tian W, Obozinski G, Qi Y, Mostafavi S, Lin GN, Berriz GF, Gibbons FD, Lanckriet G, Qiu J, Grant C, Barutcuoglu Z, Hill DP, Warde-Farley D, Grouios C, Ray D, Blake JA, Deng M, Jordan MI, Noble WS, Morris Q, Klein-Seetharaman J, Bar-Joseph Z, Chen T, Sun F, Troyanskaya OG, Marcotte EM, Xu D, Hughes TR, Roth FP
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/18613946"> A critical assessment of Mus musculus gene function prediction using integrated genomic evidence</a>
-            </li></ul>
-            </td>
-            <td>
-            Genome Biol
-            </td>
-            <td>
-            06/2008
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Hibbs MA, Hess DC, Myers CL, Huttenhower C, Li K, Troyanskaya OG
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/17724061"> Exploring the functional landscape of gene expression: directed search of large microarray compendia</a>
-            </li></ul>
-            </td>
-            <td>
-            Bioinformatics
-            </td>
-            <td>
-            10/2007
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Myers CL, Troyanskaya OG
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/17599939"> Context-sensitive data integration and prediction of biological networks</a>
-            </li></ul>
-            </td>
-            <td>
-            Bioinformatics
-            </td>
-            <td>
-            09/2007
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Huttenhower C, Flamholz AI, Landis JN, Sahi S, Myers CL, Olszewski KL, Hibbs MA, Siemers NO, Troyanskaya OG, Coller HA
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-8-250"> Nearest Neighbor Networks: clustering expression data based on gene neighborhoods</a>
-            </li></ul>
-            </td>
-            <td>
-            BMC Bioinformatics
-            </td>
-            <td>
-            07/2007
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Miller DL, Myers C, Rickards B, Coller H, Flint J
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/17430596"> Adenovirus type 5 exerts genome-wide control over cellular programs governing proliferation, quiescence and survival</a>
-            </li></ul>
-            </td>
-            <td>
-            Genome Biol
-            </td>
-            <td>
-            04/2007
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Myers CL
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.cs.princeton.edu/research/techreps/TR-806-07">Context-sensitive methods for learning from genomic data</a>
-            </li></ul>
-            </td>
-            <td>
-            Princeton University
-            </td>
-            <td>
-            10/2007
-            </td>
-            <td>
-             Doctoral dissertation
-             </td>
-        </tr>
-        <tr>
-            <td>
-            Huttenhower C, Hibbs M, Myers C, Troyanskaya OG
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://academic.oup.com/bioinformatics/article/22/23/2890/278521/A-scalable-method-for-integration-and-functional"> A scalable method for integration and functional analysis of multiple microarray datasets</a>
-            </li></ul>
-            </td>
-            <td>
-            Bioinformatics
-            </td>
-            <td>
-            09/2006
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Brown JA, Sherlock G, Myers CL, Burrows NM, Deng C, Wu HI, McCann KE, Troyanskaya OG, Brown JM
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1681475/"> Global analysis of gene function in yeast by quantitative phenotypic profiling</a>
-            </li></ul>
-            </td>
-            <td>
-            Mol Syst Biol
-            </td>
-            <td>
-            01/2006
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Myers CL, Barrett DR, Hibbs MA, Huttenhower C, Troyanskaya OG: Finding function
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-7-187"> Evaluation methods for functional genomic data</a>
-            </li></ul>
-            </td>
-            <td>
-            BMC Genomics
-            </td>
-            <td>
-            07/2006
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Reguly T, Breitkreutz A, Boucher L, Breitkreutz BJ, Hon GC, Myers CL, Parsons A, Friesen H, Oughtred R, Tong A, Stark C, Ho Y, Botstein D, Andrews B, Boone C, Troyanskya OG, Ideker T, Dolinski K, Batada NN, Tyers M
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://jbiol.biomedcentral.com/articles/10.1186/jbiol36"> Comprehensive curation and analysis of global interaction networks in Saccharomyces cerevisiae</a>
-            </li></ul>
-            </td>
-            <td>
-            Journal of Biology
-            </td>
-            <td>
-            06/2006
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Sealfon RS, Hibbs MA, Huttenhower C, Myers CL, Troyanskaya OG: GOLEM
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-7-443"> an interactive graph-based gene-ontology navigation and analysis tool</a>
-            </li></ul>
-            </td>
-            <td>
-            BMC Bioinformatics
-            </td>
-            <td>
-            10/2006
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Myers CL, Robson D, Wible A, Hibbs MA, Chiriac C, Theesfeld CL, Dolinski K, Troyanskaya OG
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2005-6-13-r114"> Discovery of biological networks from diverse functional genomic data</a>
-            </li></ul>
-            </td>
-            <td>
-            Genome Biol
-            </td>
-            <td>
-            12/2005
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Myers CL, Chen X, Troyanskaya OG
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-6-146"> Visualization-based discovery and analysis of genomic aberrations in microarray data</a>
-            </li></ul>
-            </td>
-            <td>
-            BMC Bioinformatics
-            </td>
-            <td>
-            06/2005
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Kung SY, Zhang X, Myers CL
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://projecteuclid.org/euclid.cis/1149775035"> A recursive QR approach to adaptive equalization of time-varying MIMO channels</a>
-            </li></ul>
-            </td>
-            <td>
-            Communications in Information and Systems
-            </td>
-            <td>
-            05/2005
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Myers CL, Dunham MJ, Kung SY, Troyanskaya OG
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="https://www.ncbi.nlm.nih.gov/pubmed/15284100"> Accurate detection of aneuploidies in array CGH and gene expression microarray data</a>
-            </li></ul>
-            </td>
-            <td>
-            Bioinformatics
-            </td>
-            <td>
-            12/2004
-            </td>
-            <td>
-            Article
-            </td>
-        </tr>
-        <tr>
-            <td>
-            Zhang X, Myers CL, Kung SY
-            <br>
-            <ul class="list-unstyled"><li>
-            <a href="http://ieeexplore.ieee.org/document/1327179/"> Cross-Weighted Fisher discriminant analysis for visualization of DNA microarray data</a>
-            </li></ul>
-            </td>
-            <td>
-            IEEE International Conference on Acoustics, Speech, and Signal Processing Proceedings
-            </td>
-            <td>
-            05/2004
-            </td>
-            <td>
-            Conference
-            </td>
-        </tr>
-        </tbody>
+            <tr>
+              <td>
+                VanderSluis B*, Costanzo M*, Billmann M, Ward HN, Myers CL^, Andrews BJ^, Boone C
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href=https://www.sciencedirect.com/science/article/pii/S1369527418300523> Integrating genetic and
+                      protein–protein interaction networks maps a functional wiring diagram of a cell</a> </li> </ul>
+                      </td> <td>Current Opinion in Microbiology
+              </td>
+              <td>06/2018</td>
+              <td>Review</td>
+            </tr>
+            <tr>
+              <td>
+                Kuzmin E*, VanderSluis B*, Wang W, Tan G, Deshpande R, Chen Y, Usaj M, Balint A,
+                Mattiazzi Usaj M, van Leeuwen J, Koch EN, Pons C, Dagilis AJ, Pryszlak M, Yang
+                Wang JZ, Hanchard J, Riggi M, Xu K, Heydari H, San Luis BJ, Shuteriqi E, Zhu H,
+                Van Dyk N, Sharifpoor S, Costanzo M, Loewith R, Caudy A, Bolnick D, Brown GW,
+                Andrews BJ^, Boone C^, Myers CL^
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href=http://science.sciencemag.org/content/360/6386/eaao1729>Systematic analysis of complex
+                      genetic interactions</a> </li> </ul> </td> <td>Science
+              </td>
+              <td>04/2018</td>
+              <td>Article</td>
+            </tr>
+            <tr>
+              <td>
+                Lu Y, Truman W, Liu X, Bethke G, Zhou M, Myers C, Katagiri F, Glazebrook J
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.plantphysiol.org/content/176/4/3046"> Different Modes of Negative Regulation
+                      of Plant Immunity by Calmodulin-Related Genes</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Plant Physiology
+              </td>
+              <td>
+                04/2018
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Can Kayatekin, Audra Amasino, Giorgio Gaglia, Jason Flannick, Julia M Bonner, Saranna Fanning,
+                Priyanka Narayan, M Inmaculada Barrasa, David Pincus, Dirk Landgraf, Justin Nelson, William R Hesse,
+                Michael Costanzo, Chad L Myers, Charles Boone, Jose C Florez, Susan Lindquist, AMP T2D-GENES
+                Consortium
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href=https://www.sciencedirect.com/science/article/pii/S0092867418301703> Translocon Declogger
+                      Ste24 Protects against IAPP Oligomer-Induced Proteotoxicity</a> </li> </ul> </td> <td>Cell
+              </td>
+              <td>03/2018</td>
+              <td>Article</td>
+            </tr>
+            <tr>
+              <td>
+                Nelson J, Simpkins S, Safizadeh H, Li S, Piotrowski J, Hirano H, Yashiroda Y, Osada H, Yoshida M,
+                Boone C, Myers C
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.biorxiv.org/content/early/2017/08/07/112854"> MOSAIC: a chemical-genetic
+                      interaction data repository and web resource for exploring chemical modes of action</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                BioRxiv
+              </td>
+              <td>
+                08/2017
+              </td>
+              <td>
+                Pre-print
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Simpkins S, Nelson J, Deshpande R, Li S, Piotrowski J, Wilson E, Gebre A, Okamoto R, Ohya Y, Osada H,
+                Yoshida M, Boone C,Myers C
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.biorxiv.org/content/early/2017/03/01/111252"> Large-scale interpretation of
+                      chemical-genetic interaction profiles using a genetic interaction network</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                BioRxiv
+              </td>
+              <td>
+                03/2017
+              </td>
+              <td>
+                Pre-print
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Mechanic L, Lindström S, Daily K, Sieberts S, Amos C, Chen H, Cox N, Dathe M, Feuer E, Guertin M,
+                Hoffman J, Liu Y, Moore J, Myers C, Ritchie M, Schildkraut J, Schumacher F, Witte J, Wang W, Williams
+                S, U4C Challenge Participants , U4C Challenge Data Contributors , Gillanders E
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006945"> Up For A
+                      Challenge (U4C): Stimulating innovation in breast cancer genetic epidemiology</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                PLOS Genetics
+              </td>
+              <td>
+                11/2017
+              </td>
+              <td>
+                Editorial
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Wang W, Xu Z, Costanzo M, Boone C, Lange C, Myers C
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006973">
+                      Pathway-based discovery of genetic interactions in breast cancer</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                PLOS Genetics
+              </td>
+              <td>
+                11/2017
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Rizzolo K, Huen J, Kumar A, Phanse S, Vlasblom J, Kakihara Y, Zerineddine H, Minic Z, Snider J, Wang
+                W, Pons C, Seraphim T, Boczek E, Alber S, Costanxo M, Myers C, Stagjar I, Boone C, Houry W
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.sciencedirect.com/science/article/pii/S2211124717312160"> Features of the
+                      Chaperone Cellular Network Revealed through Systematic Interaction Mapping</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Cell Reports
+              </td>
+              <td>
+                11/2017
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Fang G, Wang W, Paunic V, Heydari H, Costanzo M, Liu X, Liu X, Oately B, Steinbach M, Van Ness B,
+                Schadt E, Pankratz N, Boone C, Kumar V, Myers C
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.biorxiv.org/content/early/2017/08/30/182741"> Discovering genetic
+                      interactions bridging pathways in genome-wide association studies</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                BioRxiv
+              </td>
+              <td>
+                08/2017
+              </td>
+              <td>
+                Pre-print
+              </td>
+            </tr>
+            <tr>
+              <td>
+                M Usaj, Y Tan, W Wang, B VanderSluis, A Zou, CL Myers^, Costanzo M^, Andrews B^, Boone C^
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.g3journal.org/content/early/2017/03/20/g3.117.040220"> TheCellMap.org: A
+                      Web-Accessible Database for Visualizing and Mining the Global Yeast Genetic Interaction
+                      Network.</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                G3: Genes, Genomes, Genetics
+              </td>
+              <td>
+                03/2017
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Piotrowski JS*, Li SC*, Deshpande R*, Simpkins SW*, Nelson J, Yashiroda Y, Barber J, Safizadeh H,
+                Wilson E, Okada H, Gebre A, Kubo K, Torres N, LeBlanc M, Andrusiak K, Okamoto R, Yoshimura M,
+                DeRango-Adem E, van Leeuwn J, Shirahige K, Baryshnikova A, Brown AG, Hirano H, Costanzo M, Andrews B,
+                Ohya Y, Osada H^, Yoshida M^, Myers CL^, Boone C^
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.nature.com/nchembio/journal/vaop/ncurrent/full/nchembio.2436">Functional
+                      Annotation of Chemical Libraries across Diverse Biological Processes</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Nature chemical biology
+              </td>
+              <td>
+                06/2017
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Traver Hart, Amy Hin Yan Tong, Katie Chan, Jolanda Van Leeuwen, Ashwin Seetharaman, Michael Aregger,
+                Megha Chandrashekhar,
+                Nicole Hustedt, Sahil Seth, Avery Noonan, Andrea Habsid, Olga Sizova, Lyudmilla Nedyalkova, Ryan
+                Climie, Leanne Tworzyanski,
+                Keith Lawson, Maria Augusta Sartori, Sabriyeh Alibai, David Tieu, Sanna Masud, Patricia Mero,
+                Alexander Weiss,
+                Kevin R. Brown, Matej Ušaj, Maximilian Billmann, Mahfuzur Rahman, Michael Costanzo,
+                Chad L. Myers, Brenda J. Andrews, Charles Boone, Daniel Durocher and Jason Moffat
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.g3journal.org/content/early/2017/06/26/g3.117.041277">Evaluation and Design of
+                      Genome-Wide CRISPR/SpCas9 Knockout Screens</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                G3: Genes, Genomes, Genetics
+              </td>
+              <td>
+                06/2017
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Hillmer RA, Tsuda K, Rallapalli G, Asai S, Truman W, Papke MD, Sakaibara H, Jones JDG, Myers CL,
+                Katagiri F
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006639">The highly
+                      buffered Arabidopsis immune signaling network conceals the functions of its components</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Plos Genetics
+              </td>
+              <td>
+                04/2017
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                van Leeuwen J*, Pons C*, Mellor JC, Yamaguchi TN, Friesen H, Koschwanez J, Usaj MM, Pechlaner M, Takar
+                M, Usaj M, VanderSluis B, Andrusiak K, Bansal P, Baryshnikova A, Boone CE, Cao J, Cote A, Gebbia M,
+                Horecka G, Horecka I, Kuzmin E, Legro N, Liang W, van Lieshout N, McNee M, Luis BJS, Shaeri F,
+                Shuteriqi E, Sun S, Yang L, Youn JY, Yuen M, Costanzo M, Gingras AC, Aloy P, Oostenbrink C, Murray A,
+                Graham TR, Myers CL^, Andrews BJ^, Roth FP^, Boone C^
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://science.sciencemag.org/content/354/6312/aag0839">Exploring genetic suppression
+                      interactions on a global scale</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Science
+              </td>
+              <td>
+                11/2016
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Li L, Briskine R, Schaefer R, Schnable PS, Myers CL, Flagel LE, Springer NM, Muehlbauer GJ
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-016-3194-0"> Co-expression
+                      network analysis of duplicate genes in maize (Zea mays L) reveals no subgenome bias</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                BMC Genomics
+              </td>
+              <td>
+                10/2016
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Bass JIF, Pons C, Kozlowski L, Reece-Hoyes JS, Shrestha S, Holdorf AD, Mori A, Myers CL, Walhout AJM:
+                A gene-centered C
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5081483/pdf/MSB-12-884.pdf">C. elegans
+                      protein-DNA interaction network provides a framework for functional predictions</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Mol Syst Biol
+              </td>
+              <td>
+                10/2016
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                M Costanzo*, B VanderSluis*, EN Koch*, A Baryshnikova*, C Pons*, G Tan*, W Wang, M Usaj, J Hanchard,
+                SD Lee, V Pelechano, EB Styles, M Billmann, J van Leeuwen, N van Dyk, ZY Lin, E Kuzmin, J Nelson, JS
+                Piotrowski, T Srikumar, S Bahr, Y Chen, R Deshpande, CF Kurat, SC Li, Z Li, M Mattiazzi Usaj, H Okada,
+                N Pascoe, BJ San Luis, S Sharifpoor, E Shuteriqi, SW Simpkins, J Snider, HG Suresh, Y Tan, H Zhu, N
+                Malod-Dognin, V Janjic, N Przulj, OG Troyanskaya, I Stagljar, T Xia, Y Ohya, AC Gingras, B Raught, M
+                Boutros, LM Steinmetz, CL Moore, AP Rosebrock, AA Caudy, CL Myers^, B Andrews^, C Boone^
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://science.sciencemag.org/content/353/6306/aaf1420"> A global genetic interaction
+                      network maps a wiring diagram of cellular function</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Science
+              </td>
+              <td>
+                09/2016
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Styles EB, Founk KJ, Zamparo LA, Sing TL, Altintas D, Ribeyre C, Ribaud V, Rougemont J, Mayhew D,
+                Costanzo M, Usaj M, Verster AJ, Koch EN, Novarina D, Graf M, Luke B, Muzi-Falconi M, Myers CL, Mitra
+                RD, Shore D, Brown GW, Zhang Z, Boone C, Andrews BJ
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="http://www.cell.com/cell-systems/abstract/S2405-4712(16)30263-0?_returnURL=http%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2405471216302630%3Fshowall%3Dtrue">Exploring
+                      Quantitative Yeast Phenomics with Single-Cell Analysis of DNA Damage Foci</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Cell Systems
+              </td>
+              <td>
+                09/2016
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Mitra AK, Stessman HAF, Schaefer RJ, Wang W, Myers CL, Van Ness B, Beiraghi S
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4876112/pdf/fgene-07-00088.pdf">Fine-Mapping
+                      of 18q2.1 Locus Identifies Single Nucleotide Polymorphisms Associated with Nonsyndromic Cleft
+                      Lip with or without Cleft Palate</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Frontiers in Genetics
+              </td>
+              <td>
+                05/2016
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Schaefer R, Michno J, Myers CL
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.sciencedirect.com/science/article/pii/S1874939916301663"> Unraveling gene
+                      function in agricultural species using gene co-expression networks</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Biochimica et Biophysica Acta- Gene Regulatory Mechanisms
+              </td>
+              <td>
+                01/2016
+              </td>
+              <td>
+                Review
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Dickinson Q, Bottoms S, Hinchman L, McIlwain S, Li S, Myers CL, Boone C, Coon JJ, Hebert A, Sato TK,
+                Landick R, Piotrowski JS
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://microbialcellfactories.biomedcentral.com/articles/10.1186/s12934-016-0417-7">
+                      Mechanism of imidazolium ionic liquids toxicity in Saccharomyces cerevisiae and rational
+                      engineering of a tolerant, xylose-fermenting strain</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Microb Cell Fact
+              </td>
+              <td>
+                01/2016
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Piotrowski JS, Simpkins SW, Li SC, Deshpande R, McIlwain SJ, Ong IM, Myers CL, Boone C, Andersen RJ
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/25618354"> Chemical genomic profiling via barcode
+                      sequencing to predict compound mode of action</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Methods Mol Biol
+              </td>
+              <td>
+                12/2015
+              </td>
+              <td>
+                Review
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Serate J, Xie D, Pohlmann E, Donald C, Shabani M, Hinchman L, Higbee A, Mcgee M, La Reau A, Klinger
+                GE, Li S, Myers CL, Boone C, Bates DM, Cavalier D, Eilert D, Oates LG, Sanford G, Sato TK, Dale B,
+                Landick R, Piotrowski J, Ong RG, Zhang YP
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://biotechnologyforbiofuels.biomedcentral.com/articles/10.1186/s13068-015-0356-2">
+                      Controlling microbial contamination during hydrolysis of AFEX-pretreated corn stover and
+                      switchgrass: effects on hydrolysate composition, microbial response and fermentation</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Biotechnology for Biofuels
+              </td>
+              <td>
+                11/2015
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Becker JR, Pons C, Nguyen HD, Costanzo M, Boone C, Myers CL, Bielinsky AK
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1005659"> Genetic
+                      Interactions Implicating Postreplicative Repair in Okazaki Fragment Processing</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                PLoS Genet
+              </td>
+              <td>
+                11/2015
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                LT MacNeil, C Pons, HE Arda, GE Giese, CL Myers, AJM Walhout
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.cell.com/cell-systems/abstract/S2405-4712(15)00056-3"> Transcription Factor
+                      Activity Mapping of a Tissue-Specific In Vivo Gene Regulatory Network</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Cell Systems
+              </td>
+              <td>
+                08/2015
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Piotrowski JS, Okada H, Lu F, Li SC, Hinchman L, Ranjan A, Smith DL, Kigbee AJ, Ulbrich A, Coon JJ,
+                Deshpande R, Bukhman YV, McIlwain S, Ong IM, Myers CL, Boone C, Landick R, Ralph J, Kabbage M, Ohya Y
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.pnas.org/content/112/12/E1490"> Plant-derived antifungal agent poacic acid
+                      targets β-1,3-glucan</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                PNAS
+              </td>
+              <td>
+                02/2015
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Pons C, Costanzo M, Boone C, Myers CL
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.cambridge.org/catalogue/catalogue.asp?isbn=1107013844"> Systems Genetics -
+                      linking genotypes and phenotypes: Computational paradigms for analyzing genetic interaction
+                      networks</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Cambridge University Press
+              </td>
+              <td>
+                10/2015
+              </td>
+              <td>
+                Book
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Abbey DA, Funt J, Lurie-Weinberger MN, Thompson DA, Regev A, Myers CL, Berman J
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-014-0100-8"> YMAP: a
+                      pipeline for visualization of copy number variation and loss of heterozygosity in eukaryotic
+                      pathogens</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Genome Medicine
+              </td>
+              <td>
+                11/2014
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Brown JCS, Nelson J, VanderSluis B, Desphande R, Butts A, Kagan S, Polacheck I, Krysan DJ, Myers CL^,
+                Madhani HD^
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="http://www.cell.com/cell/abstract/S0092-8674(14)01371-3?_returnURL=http%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS0092867414013713%3Fshowall%3Dtrue">
+                      Unraveling the biology of a fungal meningitis pathogen using chemical genetics</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Cell
+              </td>
+              <td>
+                10/2014
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Wyche TP, Piotrowski JS, Hou Y, Braun D, Deshpande R, McIlwain S, Ong IM, Myers CL, Guzei IA, Westler
+                WA, Andes DR, Bugni, TS Forazoline A
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://onlinelibrary.wiley.com/doi/10.1002/ange.201405990/full">Marine‐Derived Polyketide
+                      with Antifungal In Vivo Efficacy</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Angewandte Chemie
+              </td>
+              <td>
+                09/2014
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Stessman HAF, Lulla A, Xia T, Mitra A, Harding T, Mansoor A, Myers CL, Van Ness BG, Dolloff NG
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.nature.com/leu/journal/v28/n11/full/leu2014214a.html"> High-throughput drug
+                      screening identifies compounds and molecular strategies for targeting proteasome
+                      inhibitor-resistant multiple myeloma</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Leukemia
+              </td>
+              <td>
+                07/2014
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                DiPrima S, Haarer B, Viggiano S, Pons C, Myers CL, Amberg DC
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.g3journal.org/content/4/8/1491.long"> Linking genetics to structural biology:
+                      complex heterozygosity screening with actin alanine scan alleles identifies functionally related
+                      surfaces on yeast actin</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                G3
+              </td>
+              <td>
+                08/2014
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Schaefer RJ, Briskine R, Springer NM, Myers CL^
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0099193"> Discovering
+                      functional modules across diverse maize transcriptomes using COB, the Co-Expression Browser</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                PLoS ONE
+              </td>
+              <td>
+                06/2014
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Bansal M, Yang J, Karan C, Menden MP, Costello JC, Tang H, Xiao G, Li Y, Allen J, Zhong R, Chen B, Kim
+                M, Wang T, Heiser LM, Realubit R, Mattioli M, Alvarez MJ, Shen Y, NCI-DREAM Community, Gallahan D,
+                Singer D, Saez-Rodriguez J, Xie Y, Stolovitzky G, Califano A
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.nature.com/nbt/journal/v32/n12/full/nbt.3052.html"> A community computational
+                      challenge to predict the activity of pairs of compounds</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Nat Biotechnol
+              </td>
+              <td>
+                09/2014
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Costello JC, Heiser LM, Georgii E, Gönen M, Menden MP, Wang NJ, Bansal M, Ammad-Ud-Din M, Hintsanen P,
+                Khan SA, Mpindi JP, Kallioniemi O, Honkela A, Aittokallio T, Wennerberg K, NCI DREAM Community,
+                Collins JJ, Gallahan D, Singer D, Saez-Rodriguez J, Kaski S, Gray JW, Stolovitzky G
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.nature.com/nbt/journal/v32/n12/full/nbt.2877.html"> A community effort to
+                      assess and improve drug sensitivity prediction algorithms</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Nat Biotechnol
+              </td>
+              <td>
+                06/2014
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                VanderSluis B*, Hess DC*, Pesyna C, Krumholz E, Syed T, Szappanos B, Nislow C, Troyanskaya OG, Myers
+                CL^, Caudy AA^
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2014-15-4-r64"> Broad
+                      metabolic sensitivity profiling of a prototrophic yeast deletion collection</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Genome Biology
+              </td>
+              <td>
+                04/2014
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Kim Y, Tsuda K, Igarashi D, Hillmer RA, Sakakibara H, Myers CL, Katagiri F
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.cell.com/cell-host-microbe/abstract/S1931-3128(13)00435-6"> Mechanisms
+                      underlying robustness and tunability in a plant immune signaling network</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Cell Host & Microbe
+              </td>
+              <td>
+                01/2014
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Fuxman Bass JI, Diallo A, Nelson J, Soto JM, Myers CL, Walhout AJM
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.nature.com/nmeth/journal/v10/n12/full/nmeth.2728.html"> Using networks to
+                      measure similarity between genes: association index selection</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Nature Methods
+              </td>
+              <td>
+                11/2013
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Fung SY, Sofiyev V, Schneiderman J, Hirschfeld AF, Victor RE, Woods K, Piotrowski JS, Deshpande R, Li
+                SC, de Voogd NJ, Myers CL, Boone B, Andersen RJ, Turvey SE
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://pubs.acs.org/doi/abs/10.1021/cb400740c"> Unbiased Screening of Marine Sponge
+                      Extracts for Anti-inflammatory Agents Combined with Chemical Genomics Identifies Girolline as an
+                      Inhibitor of Protein Synthesis</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                ACS Chemical Biology
+              </td>
+              <td>
+                10/2013
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Baryshnikova A, Vandersluis B, Costanzo M, Myers CL, Cha RS, Andrews B, Boone C
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/23979930"> Global Linkage Map Connects Meiotic
+                      Centromere Function to Chromosome Size in Budding Yeast</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                G3
+              </td>
+              <td>
+                10/2013
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Eichten SR, Briskine R, Song J, Li Q, Swanson-Wagner R, Hermanson PJ, Waters AJ, Starr E, West PT,
+                Tiffin P, Myers CL, Vaughn MW, Springer NM
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.plantcell.org/content/early/2013/08/02/tpc.113.114793.full.pdf+html">
+                      Epigenetic and Genetic Influences on DNA Methylation Variation in Maize Populations</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Plant Cell
+              </td>
+              <td>
+                08/2013
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Deshpande R*, Asiedu M*, Klebig M, Sutor S, Kuzmin E, Nelson J, Piotrowski J, Shin SH, Yoshida M,
+                Costanzo M, Boone C, Wigle DA^, Myers CL^
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/23980094"> A comparative genomic approach for
+                      identifying synthetic lethal interactions in human cancer</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Cancer Research
+              </td>
+              <td>
+                08/2013
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Deshpande R, VanderSluis B, Myers CL
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0068664"> Comparison of
+                      profile similarity measures for genetic interaction networks</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                PLoS ONE
+              </td>
+              <td>
+                07/2013
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Stessman HA, Baughn LB, Sarver A, Xia T, Deshpande R, Mansoor A, Linden MA, Doloff N, Janz S, Myers
+                CL, Van Ness B
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/23536725"> Profiling bortezomib resistance and
+                      identification of secondary therapies in a mouse myeloma model</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Mol Cancer Ther
+              </td>
+              <td>
+                06/2013
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Nguyen HD, Becker J, Thu YM, Costanzo M, Koch EN, Smith S, Myung K, Myers CL, Boone C, Bielinsky AK
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066379"> Unligated
+                      Okazaki Fragments Induce PCNA Ubiquitination and a Requirement for Rad59-Dependent Replication
+                      Fork Progression</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                PLoS ONE
+              </td>
+              <td>
+                06/2013
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Reece-Hoyes JS*, Pons C*, Diallo A, Mori A, Shrestha S, Kadreppa S, Nelson J, Diprima S, Dricot A,
+                Lajoie BR, Ribeiro PS, Weirauch MT, Hill DE, Hughes TR, Myers CL^, Walhout AJ^
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/23791784"> Extensive Rewiring and Complex
+                      Evolutionary Dynamics in a C elegans Multiparameter Transcription Factor Network</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Mol Cell
+              </td>
+              <td>
+                06/2013
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                A Baryshnikova, M Costanzo, CL Myers, B Andrews, C Boone
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/23808365"> Genetic Interaction Networks: Toward an
+                      Understanding of Heritability</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Annual Review of Genomics and Human Genetics
+              </td>
+              <td>
+                06/2013
+              </td>
+              <td>
+                Review
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Wagih O, Usaj M, Baryshnikova A, VanderSluis B, Kuzmin E, Costanzo M, Myers CL, Andrews BJ, Boone CM,
+                Parts L
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/23677617"> SGAtools: one-stop analysis and
+                      visualization of array-based genetic interaction screens</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Nucleic Acids Research
+              </td>
+              <td>
+                05/2013
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Colak R, Kim T, Michaut M, Sun M, Irimia M, Bellay J, Myers CL, Blencowe BJ, Kim PM
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003030"> Distinct
+                      Types of Disorder in the Human Proteome: Functional Implications for Alternative Splicing</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                PLoS Comput Biol
+              </td>
+              <td>
+                04/2013
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Sekhon RS, Briskine R, Hirsch CN, Myers CL, Springer NM, Buell CR, de Leon N, Kaeppler SM
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0061005"> Maize Gene
+                      Atlas Developed by RNA Sequencing and Comparative Evaluation of Transcriptomes Based on RNA
+                      Sequencing and Microarrays</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                PLoS ONE
+              </td>
+              <td>
+                04/2013
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Alver B, Jauert PA, Brosnan L, O’Hehir M, VanderSluis B, Myers CL, Kirkpatrick DT
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/23550123"> A whole genome screen for minisatellite
+                      stability genes in stationary phase yeast cells</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                G3
+              </td>
+              <td>
+                04/2013
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Makarevitch I, Eichten SR, Briskine R, Danilevskaya ON, Meeley RB, Myers CL, Vaughn MW, Springer NM
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/23463775"> Genomic distribution of maize facultative
+                      heterochromatin marked by trimethylation of H3K27</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Plant Cell
+              </td>
+              <td>
+                03/2013
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Koch E, Costanzo M, Bellay J, Deshpande R, Chatfield-Reed K, Chua G, D’Urso G, Andrews B, Boone C,
+                Myers CL
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2012-13-7-r57"> Conserved
+                      rules govern genetic interaction degree across species</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Genome Biol
+              </td>
+              <td>
+                07/2012
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Swanson-Wagner R*, Briskine R*, Schaefer R, Hufford MB, Ross-Ibarra J, Myers CL, Tiffin P, Springer NM
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.pnas.org/content/109/29/11878.abstract"> Reshaping of the maize transcriptome
+                      by domestication</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Proc Natl Acad Sci
+              </td>
+              <td>
+                06/2012
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Davidson MB, Katou Y, Keszthelyi A, Sing TL, Xia T, Ou J, Vaisica JA, Thevakumaran N, Marjavaara L,
+                Myers CL, Chabes A, Shirahige K, Brown GW
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/22234187"> Endogenous DNA replication stress results
+                      in expansion of dNTP pools and a mutator phenotype</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                EMBO J
+              </td>
+              <td>
+                02/2012
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Sharifpoor S, van Dyk D, Costanzo M, Baryshnikova A, Friesen H, Douglas AC, Youn JY, Vandersluis B,
+                Myers CL, Papp B, Boone C, Andrews BJ
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/22282571"> Functional wiring of the yeast kinome
+                      revealed by global analysis of genetic network motifs</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Genome Res
+              </td>
+              <td>
+                01/2012
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Costanzo M, Baryshnikova A, VanderSluis B, Andrews B, Myers CL, Boone C
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.elsevier.com/books/handbook-of-systems-biology/walhout/978-0-12-385944-0">
+                      Genetic Networks: Handbook of Systems Biology Concepts and Insights</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Elsevier
+              </td>
+              <td>
+                11/2012
+              </td>
+              <td>
+                Book
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Cokol M, Chua HN, Tasan M, Mutlu B, Weinstein ZB, Suzuki Y, Nergiz ME, Costanzo M, Baryshnikova A,
+                Giaever G, Nislow C, Myers CL, Andrews BJ, Boone C, Roth FP
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/22068327"> Systematic exploration of synergistic drug
+                      pairs</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Mol Syst Biol
+              </td>
+              <td>
+                11/2011
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Reece-Hoyes JS, Diallo A, Lajoie B, Kent A, Shrestha S, Kadreppa S, Pesyna C, Dekker J, Myers CL,
+                Walhout AJM
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/22037705"> Enhanced yeast one-hybrid (eY1H) assays
+                      for high-throughput gene-centered regulatory network mapping</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Nature Methods
+              </td>
+              <td>
+                10/2011
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Bellay J, Atluri G, Sing TL, Toufighi K, Costanzo M, Ribeiro PS, Pandey G, Baller J, VanderSluis B,
+                Michaut M, Han S, Kim P, Brown GW, Andrews BJ, Boone C, Kumar V, Myers CL
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/21715556"> Putting genetic interactions in context
+                      through a global modular decomposition</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Genome Research
+              </td>
+              <td>
+                08/2011
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Williams DE, Dalisay DS, Patrick BO, Matainaho T, Andrusiak K, Deshpande R, Myers CL, Piotrowski JS,
+                Boone C, Yoshida M, Andersen RJ
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://pubs.acs.org/doi/abs/10.1021/ol2014494"> Padanamides A and B, Highly Modified
+                      Linear Tetrapeptides Produced in Culture by a Streptomyces sp Isolated from a Marine
+                      Sediment</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Organic Letters
+              </td>
+              <td>
+                07/2011
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Szappanos B, Kovacs K, Szamecz B, Honti F, Costanzo M, Baryshnikova A, Gelius-Dietrich G, Lercher MJ,
+                Jelasity M, Myers CL, Andrews BJ, Boone C, Oliver SG, Pal C, Papp B
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.nature.com/ng/journal/v43/n7/full/ng.846.html"> An integrated approach to
+                      characterize genetic interaction networks in yeast metabolism</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Nature Genetics
+              </td>
+              <td>
+                05/2011
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Li Z, Vizeacoumar FJ, Bahr S, Li J, Warringer J, Vizeacoumar FS, Min R, VanderSluis B, Bellay J, Devit
+                M, Fleming JA, Stephens A, Haase J, Lin ZY, Baryshnikova A, Lu H, Yan Z, Jin K, Barker S, Datti A,
+                Giaever G, Nislow C, Bulawa C, Myers CL, Costanzo M, Gingras AC, Zhang Z, Blomberg A, Bloom K, Andrews
+                B, Boone C
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.nature.com/nbt/journal/v29/n4/full/nbt.1832.html"> Systematic exploration of
+                      essential yeast gene function with temperature-sensitive mutants</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Nature Biotechnology
+              </td>
+              <td>
+                03/2011
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Bellay J*, Han S*, Michaut M*, Kim T, Costanzo M, Andrews BJ, Boone C, Bader GD, Myers CL^, Kim PM^
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/21324131"> Bringing order to protein disorder through
+                      comparative genomics and genetic interactions</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Genome Biol
+              </td>
+              <td>
+                02/2011
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Michaut M, Baryshnikova A, Costanzo M, Myers CL, Andrews BJ, Boone C, Bader GD
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1001092"> Protein
+                      complexes are central in the yeast genetic landscape</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                PLoS Comput Biol
+              </td>
+              <td>
+                02/2011
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Desphande R, Sharma S, Hu WS, Verfaillie CM, Myers CL
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1001028"> A
+                      Scalable Approach for Discovering Conserved Active Subnetworks across Species</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                PLoS Comput Biol
+              </td>
+              <td>
+                12/2010
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                VanderSluis B, Bellay J, Musso G, Costanzo M, Papp B, Vizeacoumar FJ, Baryshnikova A, Andrews B, Boone
+                C, Myers CL
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/21081923"> Genetic interactions reveal the
+                      evolutionary trajectories of duplicate genes</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Mol Syst Biol
+              </td>
+              <td>
+                11/2010
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Costanzo M, Baryshnikova A, Myers CL, Andrews B, Boone C
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/21111604"> Charting the genetic interaction map of a
+                      cell</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Curr Opin Biotechnol
+              </td>
+              <td>
+                11/2010
+              </td>
+              <td>
+                Review
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Baryshnikova A, Costanzo M, Dixon S, Vizeacoumar FJ, Myers CL, Andrews B, Boone C
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/21111604"> Synthetic genetic array (SGA) analysis in
+                      Saccharomyces cerevisiae and Schizosaccharomyces pombe</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Methods Enzymol
+              </td>
+              <td>
+                11/2010
+              </td>
+              <td>
+                Review
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Baryshnikova A, Costanzo M, Kim Y, Ding H, Koh J, Toufighi K, Youn JY, Ou J, San Luis BJ,
+                Bandyopadhyay S, Hibbs M, Hess D, Gingras AC, Bader GD, Troyanskaya OG, Brown GW, Andrews B, Boone C,
+                Myers CL
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.nature.com/nmeth/journal/v7/n12/full/nmeth.1534.html"> Quantitative analysis
+                      of fitness and genetic interactions in yeast on a genome scale</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Nature Methods
+              </td>
+              <td>
+                10/2010
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Pandey G, Zhang B, Chang AN, Myers CL, Zhu J, Kumar V, Schadt EE
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000928"> An
+                      integrative multi-network and multi-classifier approach to predict genetic interactions</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                PLoS Comput Biol
+              </td>
+              <td>
+                09/2010
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Costanzo M, Baryshnikova A, Bellay J, Kim Y, Spear ED, Sevier CS, Ding H, Koh JL, Toufighi K,
+                Mostafavi S, Prinz J, St Onge RP, VanderSluis B, Makhnevych T, Vizeacoumar FJ, Alizadeh S, Bahr S,
+                Brost RL, Chen Y, Cokol M, Deshpande R, Li Z, Lin ZY, Liang W, Marback M, Paw J, San Luis BJ,
+                Shuteriqi E, Tong AH, van Dyk N, Wallace IM, Whitney JA, Weirauch MT, Zhong G, Zhu H, Houry WA, Brudno
+                M, Ragibizadeh S, Papp B, Pal C, Roth FP, Giaever G, Nislow C, Troyanskaya OG, Bussey H, Bader GD,
+                Gingras AC, Morris QD, Kim PM, Kaiser CA, Myers CL, Andrews BJ, Boone C
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://science.sciencemag.org/content/327/5964/425"> The genetic landscape of a cell</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Science
+              </td>
+              <td>
+                01/2010
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Koh JL, Ding H, Costanzo M, Baryshnikova A, Toufighi K, Bader GD, Myers CL, Andrews BJ, Boone C
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/19880385"> DRYGIN: a database of quantitative genetic
+                      interaction networks in yeast</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Nucleic Acids Res
+              </td>
+              <td>
+                01/2010
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Atluri G, Bellay J, Pandey G, Myers CL, Kumar V
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://vk.cs.umn.edu/dmbio/publications/Atluri_BIOKDD10.pdf"> Discovering coherent value
+                      bicliques in genetic interaction data</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                9th International Workshop on Data Mining in Bioinformatics
+              </td>
+              <td>
+                07/2010
+              </td>
+              <td>
+                Conference
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Fang G, Kuang R, Pandey G, Steinbach M, Myers CL, Kumar V
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/19908367"> Subspace differential coexpression
+                      analysis: problem definition and a general approach</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Pac Symp Biocomput
+              </td>
+              <td>
+                01/2010
+              </td>
+              <td>
+                Conference
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Huttenhower C*, Hibbs MA*, Myers CL*, Caudy AA, Hess DC, Troyanskaya OG
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/19561015"> The impact of incomplete knowledge on
+                      evaluation: an experimental benchmark for protein function prediction</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Bioinformatics
+              </td>
+              <td>
+                09/2009
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Myers CL, Chiriac C, Troyanskaya OG
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2005-6-13-r114"> Discovering
+                      biological networks from diverse functional genomic data</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Methods Mol Biol
+              </td>
+              <td>
+                07/2009
+              </td>
+              <td>
+                Review
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Pandey G, Myers CL, Kumar V
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-10-142">
+                      Incorporating functional inter-relationships into protein function prediction algorithms</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                BMC Bioinformatics
+              </td>
+              <td>
+                05/2009
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Huttenhower C, Myers CL, Hibbs MA, Troyanskaya OG
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/19521830/"> Computational analysis of the yeast
+                      proteome: understanding and exploiting functional specificity in genomic data</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Methods Mol Biol
+              </td>
+              <td>
+                04/2009
+              </td>
+              <td>
+                Review
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Hess DC, Myers CL*, Huttenhower C*, Hibbs MA*, Hayes AP, Paw J, Clore JJ, Mendoza RM, Luis BS, Nislow
+                C, Giaever G, Costanzo M, Troyanskaya OG, Caudy AA
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000407">
+                      Computationally driven, quantitative experiments discover genes required for mitochondrial
+                      biogenesis</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                PLoS Genet
+              </td>
+              <td>
+                03/2009
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Hibbs MA*, Myers CL*, Huttenhower C*, Hess DC, Li K, Caudy AA, Troyanskaya OG
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000322"> Directing
+                      experimental biology: a case study in mitochondrial biogenesis</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                PLoS Comput Biol
+              </td>
+              <td>
+                03/2009
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Pandey G, Atluri G, Steinbach M, Myers C, Kumar V
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://pdfs.semanticscholar.org/93a6/ddbc4715b878e87141c86b6eae5096cc9355.pdf"> An
+                      association analysis approach to biclustering</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                15th ACM SIGKDD International Conference
+              </td>
+              <td>
+                06/2009
+              </td>
+              <td>
+                Conference
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Bellay J, VanderSluis B, Kim Y, Bandyopadhyay S, Myers CL
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://ieeexplore.ieee.org/document/5174329/"> Characterization of systems-level
+                      organization through mining large-scale genetic interaction networks</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                IEEE Workshop on Genomic Signal Processing and Statistics
+              </td>
+              <td>
+                05/2009
+              </td>
+              <td>
+                Conference
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Atluri G, Pandey G, Bellay J, Myers C, Kumar V
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.cs.umn.edu/research/technical_reports/view/09-020"> Two-Dimensional
+                      Association Analysis For Finding Constant Value Biclusters In Real-Valued Data</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Department of Computer Science and Engineering
+              </td>
+              <td>
+                09/2009
+              </td>
+              <td>
+                Conference
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Dixon SJ, Fedyshyn Y, Koh JL, Prasad TS, Chahwan C, Chua G, Toufighi K, Baryshnikova A, Hayles J, Hoe
+                KL, Kim DU, Park HO, Myers CL, Pandey A, Durocher D, Andrews BJ, Boone C
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/18931302"> Significant conservation of synthetic
+                      lethal genetic interaction networks between distantly related eukaryotes</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Proc Natl Acad Sci
+              </td>
+              <td>
+                10/2008
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Guan Y, Myers CL, Hess DC, Barutcuoglu Z, Caudy AA, Troyanskaya OG
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/18613947"> Predicting gene function in a hierarchical
+                      context with an ensemble of classifiers</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Genome Biol
+              </td>
+              <td>
+                06/2008
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Guan Y, Myers CL, Lu R, Lemischka IR, Bult CJ, Troyanskaya OG
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000165"> A
+                      genomewide functional network for the laboratory mouse</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                PLoS Comput Biol
+              </td>
+              <td>
+                09/2008
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Pena-Castillo L, Tasan M, Myers CL, Lee H, Joshi T, Zhang C, Guan Y, Leone M, Pagnani A, Kim WK,
+                Krumpelman C, Tian W, Obozinski G, Qi Y, Mostafavi S, Lin GN, Berriz GF, Gibbons FD, Lanckriet G, Qiu
+                J, Grant C, Barutcuoglu Z, Hill DP, Warde-Farley D, Grouios C, Ray D, Blake JA, Deng M, Jordan MI,
+                Noble WS, Morris Q, Klein-Seetharaman J, Bar-Joseph Z, Chen T, Sun F, Troyanskaya OG, Marcotte EM, Xu
+                D, Hughes TR, Roth FP
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/18613946"> A critical assessment of Mus musculus gene
+                      function prediction using integrated genomic evidence</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Genome Biol
+              </td>
+              <td>
+                06/2008
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Hibbs MA, Hess DC, Myers CL, Huttenhower C, Li K, Troyanskaya OG
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/17724061"> Exploring the functional landscape of gene
+                      expression: directed search of large microarray compendia</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Bioinformatics
+              </td>
+              <td>
+                10/2007
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Myers CL, Troyanskaya OG
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/17599939"> Context-sensitive data integration and
+                      prediction of biological networks</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Bioinformatics
+              </td>
+              <td>
+                09/2007
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Huttenhower C, Flamholz AI, Landis JN, Sahi S, Myers CL, Olszewski KL, Hibbs MA, Siemers NO,
+                Troyanskaya OG, Coller HA
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-8-250"> Nearest
+                      Neighbor Networks: clustering expression data based on gene neighborhoods</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                BMC Bioinformatics
+              </td>
+              <td>
+                07/2007
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Miller DL, Myers C, Rickards B, Coller H, Flint J
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/17430596"> Adenovirus type 5 exerts genome-wide
+                      control over cellular programs governing proliferation, quiescence and survival</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Genome Biol
+              </td>
+              <td>
+                04/2007
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Myers CL
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.cs.princeton.edu/research/techreps/TR-806-07">Context-sensitive methods for
+                      learning from genomic data</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Princeton University
+              </td>
+              <td>
+                10/2007
+              </td>
+              <td>
+                Doctoral dissertation
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Huttenhower C, Hibbs M, Myers C, Troyanskaya OG
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="https://academic.oup.com/bioinformatics/article/22/23/2890/278521/A-scalable-method-for-integration-and-functional">
+                      A scalable method for integration and functional analysis of multiple microarray datasets</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Bioinformatics
+              </td>
+              <td>
+                09/2006
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Brown JA, Sherlock G, Myers CL, Burrows NM, Deng C, Wu HI, McCann KE, Troyanskaya OG, Brown JM
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1681475/"> Global analysis of gene function
+                      in yeast by quantitative phenotypic profiling</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Mol Syst Biol
+              </td>
+              <td>
+                01/2006
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Myers CL, Barrett DR, Hibbs MA, Huttenhower C, Troyanskaya OG: Finding function
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://bmcgenomics.biomedcentral.com/articles/10.1186/1471-2164-7-187"> Evaluation
+                      methods for functional genomic data</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                BMC Genomics
+              </td>
+              <td>
+                07/2006
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Reguly T, Breitkreutz A, Boucher L, Breitkreutz BJ, Hon GC, Myers CL, Parsons A, Friesen H, Oughtred
+                R, Tong A, Stark C, Ho Y, Botstein D, Andrews B, Boone C, Troyanskya OG, Ideker T, Dolinski K, Batada
+                NN, Tyers M
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://jbiol.biomedcentral.com/articles/10.1186/jbiol36"> Comprehensive curation and
+                      analysis of global interaction networks in Saccharomyces cerevisiae</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Journal of Biology
+              </td>
+              <td>
+                06/2006
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Sealfon RS, Hibbs MA, Huttenhower C, Myers CL, Troyanskaya OG: GOLEM
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-7-443"> an
+                      interactive graph-based gene-ontology navigation and analysis tool</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                BMC Bioinformatics
+              </td>
+              <td>
+                10/2006
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Myers CL, Robson D, Wible A, Hibbs MA, Chiriac C, Theesfeld CL, Dolinski K, Troyanskaya OG
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://genomebiology.biomedcentral.com/articles/10.1186/gb-2005-6-13-r114"> Discovery of
+                      biological networks from diverse functional genomic data</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Genome Biol
+              </td>
+              <td>
+                12/2005
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Myers CL, Chen X, Troyanskaya OG
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-6-146">
+                      Visualization-based discovery and analysis of genomic aberrations in microarray data</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                BMC Bioinformatics
+              </td>
+              <td>
+                06/2005
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Kung SY, Zhang X, Myers CL
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://projecteuclid.org/euclid.cis/1149775035"> A recursive QR approach to adaptive
+                      equalization of time-varying MIMO channels</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Communications in Information and Systems
+              </td>
+              <td>
+                05/2005
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Myers CL, Dunham MJ, Kung SY, Troyanskaya OG
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="https://www.ncbi.nlm.nih.gov/pubmed/15284100"> Accurate detection of aneuploidies in
+                      array CGH and gene expression microarray data</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                Bioinformatics
+              </td>
+              <td>
+                12/2004
+              </td>
+              <td>
+                Article
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Zhang X, Myers CL, Kung SY
+                <br>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://ieeexplore.ieee.org/document/1327179/"> Cross-Weighted Fisher discriminant
+                      analysis for visualization of DNA microarray data</a>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                IEEE International Conference on Acoustics, Speech, and Signal Processing Proceedings
+              </td>
+              <td>
+                05/2004
+              </td>
+              <td>
+                Conference
+              </td>
+            </tr>
+          </tbody>
         </table>
-            </div>
-            </div>
-          <script>
-          $(document).ready(function(){
-              $.fn.dataTable.moment( 'MM/YYYY' );
-              $('#example').dataTable({
-                "iDisplayLength": 50,
-                "order": [[ 2, "desc" ]],
-                "columnDefs": [
-                { "width": "60%", "targets": 0}
-                ]
-                });
-          });
-          </script>
-          <script type="text/javascript" src="/js/footer.js"></script>
-    </body>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $.fn.dataTable.moment('MM/YYYY');
+        $('#example').dataTable({
+          "iDisplayLength": 50,
+          "order": [[2, "desc"]],
+          "columnDefs": [
+            { "width": "60%", "targets": 0 }
+          ]
+        });
+      });
+    </script>
+    <script type="text/javascript" src="/js/footer.js"></script>
+</body>
+
 </html>

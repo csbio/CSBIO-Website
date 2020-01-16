@@ -21,13 +21,13 @@ var html =  "" +
 "                <a class='nav-link' href='/software.html'>Software</a>" +
 "            </li>" +
 "            <li class='nav-item dropdown'>" +
-"                <a href='#' class='nav-link dropdown-toggle' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false'>" +
+"                <a href='#' class='nav-link dropdown-toggle' data-toggle='dropdown' id='dropdownMenuLink' role='button' aria-haspopup='true' aria-expanded='false'>" +
 "                    Other Pages" +
 "                </a>" +
-"                <div class='dropdown-menu' aria-labelledby='navbarDropdown'>" +
+"                <div class='dropdown-menu' aria-labelledby='dropdownMenuLink'>" +
 "                    <a class='dropdown-item' href='/LabMemberArea/LabMemberArea.html'>Lab Member Area</a>" +
-"                    <a class='dropdown-item' href='/collaborators.html'>Collaborators</a><" +
-"                    <a class='dropdown-item' href='/positions.html'>Positions</a><" +
+"                    <a class='dropdown-item' href='/collaborators.html'>Collaborators</a>" +
+"                    <a class='dropdown-item' href='/positions.html'>Positions</a>" +
 "                    <a class='dropdown-item' href='/contact.html'>Contact us</a>" +
 "                </div>" +
 "            </li>" +

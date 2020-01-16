@@ -3,207 +3,249 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Software</title>
+  <title>Software</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Loads Bootstrap 4 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-    <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
+  <!-- Loads CSS -->
+  <link href="css/styles.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- Loads fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <!-- Navigation bar -->
-    <div id="nav"></div>
-    <script type="text/javascript" src="js/header.js"></script>
+  <!-- Navigation bar -->
+  <div id="nav"></div>
+  <script type="text/javascript" src="js/header.js"></script>
 
-    <!-- Page Content -->
-    <div class="container">
+  <!-- Page Content -->
+  <div class="container">
 
-        <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Software
-                    <small>CSBIO</small>
-                </h1>
-            </div>
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="top-row row">
+      <div class="col-12">
+        <h1 class="page-header">CSBIO Research</h1>
+      </div>
+    </div>
+    <hr class="large-break">
+
+    <!-- Project 1 -->
+    <div class="card mb-3 p-3">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <a href="https://github.com/csbio/">
+            <img class="img-fluid img-hover d-block" src="images/Software/GitHub-Mark.png" alt="">
+          </a>
         </div>
-        <!-- /.row -->
-        
-        <!-- Project -->
-        <div class="row">
-            <div class="col-md-3">
-                <a href="https://github.com/csbio/">
-                    <img class="img-responsive img-hover" src="images/Software/GitHub-Mark.png" alt="">
-                </a>
-            </div>
-            <div class="col-md-9">
-                <h3>GitHub</h3>
-                <p>Our lab GitHub page where we keep our code
-                </p>
-                <a class="btn btn-primary" href="https://github.com/csbio/">View Project</a>
-            </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h4 class="card-title">GitHub</h4>
+            <p class="card-text">Our lab GitHub page where we keep our code</p>
+            <a class="btn btn-primary" href="https://github.com/csbio/">View Project</a>
+          </div>
         </div>
-        <hr>
-            
-        <!-- Project -->
-        <div class="row">
-            <div class="col-md-3">
-                <a href="http://mosaic.cs.umn.edu">
-                    <img class="img-responsive img-hover" src="images/Software/mosaic.png" alt="">
-                </a>
-            </div>
-            <div class="col-md-9">
-                <h3>Mosaic</h3>
-                <h4>Mechanism Of Action In Compounds</h4>
-                <p>The MOSAIC database is a queryable web interface for browsing chemical genetic interaction data, molecular target predictions based on genetic interactions, Gene Ontology biological process predictions, chemical genetic profile similarity and compound structural similarity. Compounds, genes, and Gene Ontology terms are queryable using MOSAIC. The MOSAIC database is generated from publicly released data from the yeast chemical genomics project
-                </p>
-                <a class="btn btn-primary" href="http://mosaic.cs.umn.edu">View Project</a>
-            </div>
+      </div>
+    </div>
+    <hr class="small-break">
+
+    <!-- Project 2 -->
+    <div class="card mb-3 p-3">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <a href="http://mosaic.cs.umn.edu">
+            <img class="img-fluid img-hover d-block" src="images/Software/mosaic.png" alt="">
+          </a>
         </div>
-        <hr>
-
-
-        <!-- Project  -->
-        <div class="row">
-            <div class="col-md-3">
-                <a href="/software.html">
-                    <img class="img-responsive img-hover" src="images/Network.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-9">
-                <h3>neXus</h3>
-                <h4>Network - cross(X)-species - Search</h4>
-                <p>neXus is active subnetwork search algorithm that has been designed to discover conserved subnetworks in the functional linkage networks that are enriched for active genes (such as high foldchange genes in microarray). The algorithm associates statistical significance to each subnetwork that is indicative of how possible such a clustering of genes is when the neXus is run on randomly set of active genes. In the paper [1], the algorithm was used on human and mouse microarray expression data of stem cell with respect to differentiating cells to discover conserved subnetworks representative of stem cell functions in the two species. Variations of the algorithm have been used to discover species specific subnetworks and on single species context. Python implementation of the algorithm is available at http://csbio.cs.umn.edu/neXus/help.html.
-                </p>
-
-                <p>Associated publication: [1] Deshpande R, Sharma S, Verfaillie CM, Hu W, Myers CL: A Scalable Approach for Discovering Conserved Active Subnetworks across Species. PLoS Comput Biol 2010 Dec;6(12):e1001028. http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1001028</p>
-                <a class="btn btn-primary" href="http://csbio.cs.umn.edu/neXus/help.html">View Project</a>
-            </div>
+        <div class="col-md-8">
+          <h4 class="card-title">Mosaic</h4>
+          <h5 class="card-subtitle mb-2 text-muted">Mechanism Of Action In Compounds</h5>
+          <p class="card-text">The MOSAIC database is a queryable web interface for browsing chemical genetic
+            interaction data, molecular target predictions based on genetic interactions, Gene Ontology biological
+            process predictions, chemical genetic profile similarity and compound structural similarity. Compounds,
+            genes, and Gene Ontology terms are queryable using MOSAIC. The MOSAIC database is generated from publicly
+            released data from the yeast chemical genomics project</p>
+          <a class="btn btn-primary" href="http://mosaic.cs.umn.edu">View Project</a>
         </div>
-        <!-- /.row -->
+      </div>
+    </div>
+    <hr class="small-break">
 
-        <hr>
-
-        <!-- Project Two -->
-        <div class="row">
-            <div class="col-md-3">
-                <a href="http://function.princeton.edu/GRIFn/">
-                    <img class="img-responsive img-hover" src="images/Software/GRIFn.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-9">
-                <h3>GRIFn</h3>
-                <h4>Gene Relationship Identification in Functional data</h4>
-                <p>GRIFn is a system for evaluation of datasets and methods using a functional genomics gold standard based on curation by expert biolgists. It allows users to assess the ability of their datasets or methods to recapitulate known biology both in a global sense and in the context of specific biological processes. GRIFn allows enables fair comparisons between various data types and methods.
-                </p>
-                <p>
-                Myers CL, Barrett D, Hibbs MA, Huttenhower C, Troyanskaya OG: Finding function: evaluation methods for functional genomic data. BMC Genomics 2006, 7:187</p>
-                <a class="btn btn-primary" href="http://function.princeton.edu/GRIFn/">View Project</a>
-            </div>
+    <!-- Project 3  -->
+    <div class="card mb-3 p-3">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <a href="/software.html">
+            <img class="img-fluid img-hover" src="images/Network.jpg" alt="">
+          </a>
         </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Three -->
-        <div class="row">
-            <div class="col-md-3">
-                <a href="http://imp.princeton.edu/">
-                    <img class="img-responsive img-hover" src="images/Software/bioPIXIE.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-9">
-                <h3>bioPIXIE</h3>
-                <h4>Biological Pathway Inference from eXperimental Interaction Evidence</h4>
-                <p>bioPIXIE is a novel system for biological data integration and visualization for S. cerevisiae. It allows the user to discover interaction networks and pathways in which the user's gene(s) of interest participate. The system is based on a Bayesian algorithm for identification of biological networks based on integrated diverse genomic data.
-                </p>
-                <p>
-                Myers CL, Robson D, Wible A, Hibbs M, Chiriac C, Theesfeld CL, Dolinski K, Troyanskaya OG: Discovery of biological networks from diverse functional genomic data. Genome Biology 2005, 6(13):R114.
-                </p>
-                <a class="btn btn-primary" href="http://imp.princeton.edu/">View Project</a>
-            </div>
+        <div class="col-md-8">
+          <h4 class="card-title">neXus</h4>
+          <h5 class="card-subtitle mb-2 text-muted">Network - cross(X)-species - Search</h5>
+          <p class="card-text">neXus is active subnetwork search algorithm that has been designed to discover conserved
+            subnetworks in the functional linkage networks that are enriched for active genes (such as high foldchange
+            genes in microarray). The algorithm associates statistical significance to each subnetwork that is
+            indicative of how possible such a clustering of genes is when the neXus is run on randomly set of active
+            genes. In the paper [1], the algorithm was used on human and mouse microarray expression data of stem cell
+            with respect to differentiating cells to discover conserved subnetworks representative of stem cell
+            functions in the two species. Variations of the algorithm have been used to discover species specific
+            subnetworks and on single species context. Python implementation of the algorithm is available at
+            http://csbio.cs.umn.edu/neXus/help.html.
+          </p>
+          <a class="btn btn-primary" href="http://csbio.cs.umn.edu/neXus/help.html">View Project</a>
+          <div class="card-footer text-muted mt-3 bg-transparent">
+            <p class="card-text">Associated publications: </p>
+            <p class="card-text">[1] Deshpande R, Sharma S, Verfaillie CM, Hu W, Myers CL: A
+              Scalable Approach for Discovering Conserved Active Subnetworks across Species. PLoS Comput Biol 2010
+              Dec;6(12):e1001028. http://www.ploscompbiol.org/article/info:doi/10.1371/journal.pcbi.1001028</p>
+          </div>
         </div>
-        <!-- /.row -->
+      </div>
+    </div>
+    <hr class="small-break">
 
-        <hr>
-
-        <!-- Project Four -->
-        <div class="row">
-
-            <div class="col-md-3">
-                <a href="http://function.princeton.edu/ChARMview/">
-                    <img class="img-responsive img-hover" src="images/Software/ChARMview.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-9">
-                <h3>ChARMview</h3>
-                <h4>Chromosomal Abberation Region Miner and Viewer</h4>
-                <p>
-                    ChARMView is a visualization and analysis system for guided discovery of chromosomal abnormalities from microarray data. Our system facilitates manual or automated discovery of aneuploidies through dynamic visualization and integrated statistical analysis. ChARMView can be used with array CGH and gene expression microarray data, and multiple experiments can be viewed and analyzed simultaneously.
-                </p>
-
-                <p>Myers CL, Chen X, Troyanskaya OG: Visualization-based discovery and analysis of genomic abberations in microarray data. BMC Bioinformatics, 6:146, 2005.
-                </p>
-
-                <p>Myers CL, Dunham M, Kung SY, Troyanskaya OG: Accurate detection of aneuploidies in array CGH and gene expression microarray data. Bioinformatics, 20:3533-3543, 2004.
-                </p>
-                <a class="btn btn-primary" href="http://function.princeton.edu/ChARMview/">View Project</a>
-            </div>
+    <!-- Project 4 -->
+    <div class="card mb-3 p-3">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <a href="http://function.princeton.edu/GRIFn/">
+            <img class="img-fluid img-hover" src="images/Software/GRIFn.jpg" alt="">
+          </a>
         </div>
-        <!-- /.row -->
-
-        <hr>
-
-        <!-- Project Five -->
-        <div class="row">
-            <div class="col-md-3">
-                <a href="#">
-                    <img class="img-responsive img-hover" src="images/Software/GOLEM.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-9">
-                <h3>GOLEM</h3>
-                <h4>Gene Ontology Local Exploration Map</h4>
-                <p>GOLEM is a tool for viewing, navigating, and analyzing the hierarchical structure and annotations to the gene ontology. The visualization component allows a user to see the local graph structure around a GO term of interest and navigate to nearby nodes. GOLEM also provides the ability to look for statistical enrichment of GO terms in lists of genes and then observe the relationships between those terms. GOLEM is available both as an applet for use online and as a standalone download.</p>
-                <p>
-                Sealfon RSG, Hibbs MA, Huttenhower C, Myers CL, Troyanskaya OG: GOLEM: an interactive graph-based gene ontology navigation and analysis tool. BMC Bioinformatics 2006, 7:443.</p>
-                <a class="btn btn-primary" href="#">View Project</a>
-            </div>
+        <div class="col-md-8">
+          <h4 class="card-title">GRIFn</h4>
+          <h5 class="card-subtitle mb-2 text-muted">Gene Relationship Identification in Functional data</h5>
+          <p class="card-text">GRIFn is a system for evaluation of datasets and methods using a functional genomics gold
+            standard based on
+            curation by expert biolgists. It allows users to assess the ability of their datasets or methods to
+            recapitulate known biology both in a global sense and in the context of specific biological processes. GRIFn
+            allows enables fair comparisons between various data types and methods.
+          </p>
+          <a class="btn btn-primary" href="http://function.princeton.edu/GRIFn/">View Project</a>
+          <div class="card-footer text-muted mt-3 bg-transparent">
+            <p class="card-text">Associated publications: </p>
+            <p class="card-text"> [1] Myers CL, Barrett D, Hibbs MA, Huttenhower C, Troyanskaya OG: Finding function:
+              evaluation methods for functional genomic data. BMC Genomics 2006, 7:187</p>
+          </div>
         </div>
-        <!-- /.row -->
+      </div>
+    </div>
+    <hr class="small-break">
 
-        <hr>
+    <!-- Project 5 -->
+    <div class="card mb-3 p-3">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <a href="http://imp.princeton.edu/">
+            <img class="img-fluid img-hover" src="images/Software/bioPIXIE.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-8">
+          <h4 class="card-title">bioPIXIE</h4>
+          <h5 class="card-subtitle mb-2 text-muted bg-transparent">Biological Pathway Inference from eXperimental
+            Interaction Evidence
+          </h5>
+          <p class="card-text">bioPIXIE is a novel system for biological data integration and visualization for S.
+            cerevisiae. It allows the user to discover interaction networks and pathways in which the user's gene(s) of
+            interest participate. The system is based on a Bayesian algorithm for identification of biological networks
+            based on integrated diverse genomic data. </p>
+          <a class="btn btn-primary" href="http://imp.princeton.edu/">View Project</a>
+          <div class="card-footer text-muted mt-3">
+            <p class="card-text">Associated publications: </p>
+            <p class="card-text"> [1] Myers CL, Robson D, Wible A, Hibbs M, Chiriac C, Theesfeld CL, Dolinski K,
+              Troyanskaya OG: Discovery of biological networks from diverse functional genomic data. Genome Biology
+              2005, 6(13):R114.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="small-break">
+
+    <!-- Project 6 -->
+    <div class="card mb-3 p-3">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <a href="http://function.princeton.edu/ChARMview/">
+            <img class="img-fluid img-hover" src="images/Software/ChARMview.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-8">
+          <h4 class="card-title">ChARMview</h4>
+          <h5 class="card-subtitle mb-2 text-muted bg-transparent">Chromosomal Abberation Region Miner and Viewer</h5>
+          <p class="card-text">
+            ChARMView is a visualization and analysis system for guided discovery of chromosomal abnormalities from
+            microarray data. Our system facilitates manual or automated discovery of aneuploidies through dynamic
+            visualization and integrated statistical analysis. ChARMView can be used with array CGH and gene expression
+            microarray data, and multiple experiments can be viewed and analyzed simultaneously.
+          </p>
+          <a class="btn btn-primary" href="http://function.princeton.edu/ChARMview/">View Project</a>
+          <div class="card-footer text-muted mt-3">
+            <p class="card-text">Associated publications: </p>
+            <p class="card-text">[1] Myers CL, Chen X, Troyanskaya OG: Visualization-based discovery and analysis of
+              genomic abberations in microarray data. BMC Bioinformatics, 6:146, 2005.</p>
+            <p class="card-text">[2] Myers CL, Dunham M, Kung SY, Troyanskaya OG: Accurate detection of aneuploidies in
+              array CGH and gene expression microarray data. Bioinformatics, 20:3533-3543, 2004.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="small-break">
+
+    <!-- Project 7 -->
+    <div class="card mb-3 p-3">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <a href="#">
+            <img class="img-fluid img-hover" src="images/Software/GOLEM.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-8">
+          <h4 class="card-title">GOLEM</h4>
+          <h5 class="card-subtitle mb-2 text-muted bg-transparent">Gene Ontology Local Exploration Map</h5>
+          <p class="card-text">GOLEM is a tool for viewing, navigating, and analyzing the hierarchical structure and
+            annotations to the gene ontology. The visualization component allows a user to see the local graph structure
+            around a GO term of interest and navigate to nearby nodes. GOLEM also provides the ability to look for
+            statistical enrichment of GO terms in lists of genes and then observe the relationships between those terms.
+            GOLEM is available both as an applet for use online and as a standalone download.</p>
+          <a class="btn btn-primary" href="#">View Project</a>
+          <div class="card-footer text-muted mt-3">
+            <p class="card-text">[1] Sealfon RSG, Hibbs MA, Huttenhower C, Myers CL, Troyanskaya OG: GOLEM: an
+              interactive graph-based gene ontology navigation and analysis tool. BMC Bioinformatics 2006, 7:443.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="small-break">
 
 
     <!-- Footer -->
     <script type="text/javascript" src="js/footer.js"></script>
-    </div>
-    <!-- /.container -->
+  </div>
+  <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
 
 
 </body>
