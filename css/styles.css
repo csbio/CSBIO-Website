@@ -110,7 +110,7 @@ body {
 .banner-img {
     height: 40vh;
     min-height: 300px;
-    background-image: url("../images/GeneticNetwork.png");
+    background-image: url("../images/cellmap.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
