@@ -3,22 +3,34 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Research</title>
+  <title>Research</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Loads Bootstrap 4 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-    <!-- Custom CSS -->
-    <link href="css/modern-business.css" rel="stylesheet">
+  <!-- Loads CSS -->
+  <link href="css/styles.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Loads fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 
 
 
@@ -26,112 +38,161 @@
 
 <body>
 
-    <!-- Navigation bar -->
-    <div id="nav"></div>
-    <script type="text/javascript" src="js/header.js"></script>
+  <!-- Navigation bar -->
+  <div id="nav"></div>
+  <script type="text/javascript" src="js/header.js"></script>
 
-    <!-- Page Content -->
-    <div class="container">
+  <!-- Page Content -->
+  <div class="container">
 
-        <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">CSBIO Research
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="top-row row">
+      <div class="col-12">
+        <h1 class="page-header">CSBIO Research
+        </h1>
+      </div>
+    </div>
+    <hr class="large-break">
 
-        <!-- Project One -->
-        <div class="row">
-            <div class="col-md-5">
-            <br>
-            <br> 
-            <br> 
-                <a href="images/ChadGI.png">
-                    <img class="img-responsive img-hover" src="images/ChadGI.png" alt="">
-                </a>
-            </div>
-            <div class="col-md-7">
-                <h3>Genetic Interactions</h3>
-                <p> We are developing computational methods for mapping and interpreting large-scale genetic interaction networks in yeast and in human cells. A powerful approach to characterizing functional organization of genomes is combinatorial genetic perturbation. While the disruption of individual genes only rarely leads to strong phenotypes (e.g. only ~10% of the genome is essential in human cells), simultaneous disruption of combinations of genes can often result in interpretable phenotypes. These instances, where combined disruption or mutation of two genes leads to an unexpected phenotype, are called genetic interactions. Because of its genetic tractability and a rich set of existing experimental tools, yeast is the premier model system for analysis of genetic interactions. Working with the <a href="http://sites.utoronto.ca/boonelab/">Boone</a> and <a href="http://sites.utoronto.ca/andrewslab/">Andrews</a> labs, we are developing computational methods for mapping and analyzing global genetic interaction networks in yeast. We have recently completed the first complete genetic interaction network for any species <a href="http://science.sciencemag.org/content/353/6306/aaf1420.full">(Costanzo 2016)</a> and are currently focused on mapping genetic interactions across diverse environmental conditions. </p>
-                <!--<a class="btn btn-primary" href="#">View Project</i></a>-->
-            </div>
-        </div>
-    
-        <hr>
-        <div class="row">
-            <div class="col-md-5">
-            <br>
-            <br> 
-            <br> 
-                <a href="images/CRISPR_GI.png">
-                    <img class="img-responsive img-hover" src="images/CRISPR_GI.png" alt=" " style="max-height: 300px">
-                </a>
-            </div>
-            <div class="col-md-7">
-                <h3>Genetic interaction analysis in human cells</h3>
-                <p>We work towards a global reference map of human gene function. In model organisms, genetic interaction mapping and network analysis can elucidate the function for every gene in the genome. Together with the <a href="http://moffatlab.ccbr.utoronto.ca/index.html">Moffat</a>, <a href="http://sites.utoronto.ca/boonelab/">Boone</a> and <a href="http://sites.utoronto.ca/andrewslab/">Andrews</a> labs at the Donnelly Centre for Cellular and Biomolecular Research in Toronto, we generate a genome-wide map of genetic interactions in a human cell line. Using CRISPR/Cas9 screening, we test effects of simultaneous mutations in two genes across millions of gene pairs. To represent genetic interaction information of all possible ~180,000,000 combinations, we develop methods to predict and screen gene pairs that have the best chance of interacting. We also develop methods to identify genetic interactions from CRISPR/Cas9 screening data and integrate other genomic data to generate a global atlas of human gene function.</p>
-            </div>
-        </div>
-        <!-- /.row -->
-        
-        <hr>
-        <div class="row">
-            <div class="col-md-5">
-            <br>
-            <br> 
-            <br> 
-                <a href="images/BRIDGE.png">
-                    <img class="img-responsive img-hover" src="images/BRIDGE.png" alt="">
-                </a>
-            </div>
-            <div class="col-md-7">
-                <h3>Genetic interactions in complex human diseasess</h3>
-                <p>Almost all complex human diseases have a genetic component. Understanding how genetic variants contribute to the development of these diseases can be invaluable to our society. It can provide guidance to disease diagnosis, inform genetic-centric strategies for disease prevention, and stimulate the development of new and more effective drugs. Although our knowledge and understanding of the genetics that underlie complex diseases has advanced substantially in recent years, due to the complexity of most human diseases, the precise genetic causes of the large majority of diseases are still unclear. For instance, in most diseases, the discovered single genetic variants identified by genome-wide association studies (GWAS) only explain a small fraction of the estimated total heritable disease risk derived from familial aggregation studies, suggesting there are still genetic factors that are not well-understood. Genetic interactions have been reported to underlie phenotypes in a variety of systems, but the extent to which they contribute to complex disease in humans is significantly understudied. This is mainly because existing methods for identifying them focus on testing individual locus pairs, which undermines statistical power. We are working on leveraging insights from genetic interaction screens in model organism to develop methods to discover interactions from human population genetic data. More specifically, we developed a computational approach called BridGE that identifies pathways connected by genetic interactions from GWAS data. We examined this method with many complex human diseases and showed it can be used as a general framework for mapping complex genetic networks underlying human disease from genome-wide genotype data.</p>
-                <!--<a class="btn btn-primary" href="#">View Project</i></a>-->
-            </div>
-        </div>
-        <hr>
-        <!-- Project Two -->
-        <div class="row">
-            <div class="col-md-5">
-                <br> 
-                <br> 
-                <br>
-                <br>
-                <a href="images/CoexPicV2.png">
-                    <img class="img-responsive img-hover" src="images/CoexPicV2.png" alt="">
-                </a>
-            </div>
-            <div class="col-md-7">
-                <h3>Co-expression networks in plants</h3>
-                <p>Our lab aims to understand the biological context of quantitative traits in plant species to better aide in identifying high-value genes important to plant breeding. Using technologies such as RNA-Seq and microarrays, it is possible to measure quantitative levels of expression throughout the genome across multiple different conditions, timepoints, tissues or samples. We build co-expression networks to infer a gene’s function by “guilt by association”, leveraging the principle that genes that are highly associated with each other are more likely to share a common function. Co-expression networks are built with the purpose of discovering and characterizing highly associated groups of genes or modules to better understand various phenotypic functions.</p>
-            </div>
-        </div>
+    <!-- Project One -->
+    <div class="row">
+      <div class="col-5">
+        <br>
+        <br>
+        <br>
+        <a href="images/ChadGI.png">
+          <img class="img-fluid img-hover" src="images/ChadGI.png" alt="">
+        </a>
+      </div>
+      <div class="col-7">
+        <h3>Genetic interactions</h3>
+        <p> We are developing computational methods for mapping and interpreting large-scale genetic interaction
+          networks in yeast and in human cells. A powerful approach to characterizing functional organization of genomes
+          is combinatorial genetic perturbation. While the disruption of individual genes only rarely leads to strong
+          phenotypes (e.g. only ~10% of the genome is essential in human cells), simultaneous disruption of combinations
+          of genes can often result in interpretable phenotypes. These instances, where combined disruption or mutation
+          of two genes leads to an unexpected phenotype, are called genetic interactions. Because of its genetic
+          tractability and a rich set of existing experimental tools, yeast is the premier model system for analysis of
+          genetic interactions. Working with the <a href="http://sites.utoronto.ca/boonelab/">Boone</a> and <a
+            href="http://sites.utoronto.ca/andrewslab/">Andrews</a> labs, we are developing computational methods for
+          mapping and analyzing global genetic interaction networks in yeast. We have recently completed the first
+          complete genetic interaction network for any species <a
+            href="http://science.sciencemag.org/content/353/6306/aaf1420.full">(Costanzo 2016)</a> and are currently
+          focused on mapping genetic interactions across diverse environmental conditions. </p>
+        <!--<a class="btn btn-primary" href="#">View Project</i></a>-->
+      </div>
+    </div>
 
-        <!-- /.row -->
-        <hr>
-        <!-- Project Three -->
-        <div class="row">
-            <div class="col-md-5">
-            <br>
-            <br> 
-            <br> 
-                <a href="images/chemical_genomics_press.jpg">
-                    <img class="img-responsive img-hover" src="images/chemical_genomics_press.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-md-7">
-                <h3>Chemical Genomics</h3>
-                <p>We are screening chemical libraries against the Saccharomyces Cerevisiae mutant collections in order to understand the mode-of-action of compounds. This research reduces the time and expense required for the creation of clinically relevant compounds. With our collaborators in the Boone Lab at the University of Toronto and at RIKEN in Japan, we have developed an ultra high-throughput chemical-genomics assay that allows the prediction of a compound’s gene- and process-level targets across the entire genome, filling a critical gap in the way compounds are screened for bioactivity. This methodology was applied to screen more than 13,000 compounds within yeast with diverse origins. From these data, we identified compounds with novel targets as well as the general cellular functions that tend to be disrupted by the compounds from diverse collections. In addition to our work in yeast, we applied our chemical-genomics system to Escherichia coli, which is helpful for understanding how to develop novel antibiotic agents.</p>
-            </div>
-        </div>
+    <hr class="small-break">
+    <div class="row">
+      <div class="col-5">
+        <br>
+        <a href="images/CRISPR_GI.png">
+          <img class="img-fluid img-hover" src="images/CRISPR_GI.png" alt=" " style="max-height: 300px">
+        </a>
+      </div>
+      <div class="col-7">
+        <h3>Genetic interaction analysis in human cells</h3>
+        <p>We work towards a global reference map of human gene function. In model organisms, genetic interaction
+          mapping and network analysis can elucidate the function for every gene in the genome. Together with the <a
+            href="http://moffatlab.ccbr.utoronto.ca/index.html">Moffat</a>, <a
+            href="http://sites.utoronto.ca/boonelab/">Boone</a> and <a
+            href="http://sites.utoronto.ca/andrewslab/">Andrews</a> labs at the Donnelly Centre for Cellular and
+          Biomolecular Research in Toronto, we generate a genome-wide map of genetic interactions in a human cell line.
+          Using CRISPR/Cas9 screening, we test effects of simultaneous mutations in two genes across millions of gene
+          pairs. To represent genetic interaction information of all possible ~180,000,000 combinations, we develop
+          methods to predict and screen gene pairs that have the best chance of interacting. We also develop methods to
+          identify genetic interactions from CRISPR/Cas9 screening data and integrate other genomic data to generate a
+          global atlas of human gene function.</p>
+      </div>
+    </div>
+    <!-- /.row -->
+
+    <hr class="small-break">
+    <div class="row">
+      <div class="col-5">
+        <br>
+        <br>
+        <br>
+        <a href="images/BRIDGE.png">
+          <img class="img-fluid img-hover" src="images/BRIDGE.png" alt="">
+        </a>
+      </div>
+      <div class="col-7">
+        <h3>Genetic interactions in complex human diseases</h3>
+        <p>Almost all complex human diseases have a genetic component. Understanding how genetic variants contribute to
+          the development of these diseases can be invaluable to our society. It can provide guidance to disease
+          diagnosis, inform genetic-centric strategies for disease prevention, and stimulate the development of new and
+          more effective drugs. Although our knowledge and understanding of the genetics that underlie complex diseases
+          has advanced substantially in recent years, due to the complexity of most human diseases, the precise genetic
+          causes of the large majority of diseases are still unclear. For instance, in most diseases, the discovered
+          single genetic variants identified by genome-wide association studies (GWAS) only explain a small fraction of
+          the estimated total heritable disease risk derived from familial aggregation studies, suggesting there are
+          still genetic factors that are not well-understood. Genetic interactions have been reported to underlie
+          phenotypes in a variety of systems, but the extent to which they contribute to complex disease in humans is
+          significantly understudied. This is mainly because existing methods for identifying them focus on testing
+          individual locus pairs, which undermines statistical power. We are working on leveraging insights from genetic
+          interaction screens in model organism to develop methods to discover interactions from human population
+          genetic data. More specifically, we developed a computational approach called BridGE that identifies pathways
+          connected by genetic interactions from GWAS data. We examined this method with many complex human diseases and
+          showed it can be used as a general framework for mapping complex genetic networks underlying human disease
+          from genome-wide genotype data.</p>
+        <!--<a class="btn btn-primary" href="#">View Project</i></a>-->
+      </div>
+    </div>
+
+    <hr class="small-break">
+    <!-- Project Two -->
+    <div class="row">
+      <div class="col-5">
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="images/CoexPicV2.png">
+          <img class="img-fluid img-hover" src="images/CoexPicV2.png" alt="">
+        </a>
+      </div>
+      <div class="col-7">
+        <h3>Modeling plant immune response</h3>
+        <p>In collaboration with the Katagiri lab here at UMN, we are developing novel computational approaches to
+          interpret dynamic transcriptome data in Arabidopsis generated during the plant’s immune response. Although
+          clustering methods can help group genes based on the profile similarity, they fail to provide a mechanistic
+          understanding of the gene clusters thus undermine the information within time-series data. In our research, we
+          use multi-compartment models to generate dynamic profiles with fast and slow response patterns. Based on how
+          well the time-series transcript data of a gene are fit, we can assign the gene to the compartment with the
+          optimal response pattern. We find gene clusters enriched for transcription factor motifs that regulate early
+          and late immune response. Our approach provides a mechanistic way to classify immune response genes and allows
+          us to better interpret Arabidopsis transcriptome dynamics.
+        </p>
+      </div>
+    </div>
+
+    <hr class="small-break">
+    <!-- Project Three -->
+    <div class="row">
+      <div class="col-5">
+        <br>
+        <a href="images/chemical_genomics_press.jpg">
+          <img class="img-fluid img-hover" src="images/chemical_genomics_press.jpg" alt="">
+        </a>
+      </div>
+      <div class="col-7">
+        <h3>Chemical genomics</h3>
+        <p>We are screening chemical libraries against the Saccharomyces Cerevisiae mutant collections in order to
+          understand the mode-of-action of compounds. This research reduces the time and expense required for the
+          creation of clinically relevant compounds. With our collaborators in the Boone Lab at the University of
+          Toronto and at RIKEN in Japan, we have developed an ultra high-throughput chemical-genomics assay that allows
+          the prediction of a compound’s gene- and process-level targets across the entire genome, filling a critical
+          gap in the way compounds are screened for bioactivity. This methodology was applied to screen more than 13,000
+          compounds within yeast with diverse origins. From these data, we identified compounds with novel targets as
+          well as the general cellular functions that tend to be disrupted by the compounds from diverse collections. In
+          addition to our work in yeast, we applied our chemical-genomics system to Escherichia coli, which is helpful
+          for understanding how to develop novel antibiotic agents.</p>
+      </div>
+    </div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
 
     <!-- Footer -->
     <script type="text/javascript" src="js/footer.js"></script>

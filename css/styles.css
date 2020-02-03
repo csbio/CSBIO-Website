@@ -1,0 +1,189 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* ==========================================================================
+   Global
+   ========================================================================== */
+
+html,
+body {
+    height: 100%;
+    font-family: 'Rubik', sans-serif !important;
+}
+
+body {
+    padding-top: 50px; 
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Card classes */
+.card {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+/* HR classes */ 
+.large-break{
+	border-top: 2px solid rgba(0,0,0,0.8);
+}
+
+.small-break{
+    border-top: 1px solid rgba(18,18,18,0.2);
+}
+
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
+
+.navbar {
+    font-family: 'Nunito', sans-serif !important;
+} 
+/* Sets background color */
+.navbar {
+    background-color: #1b1b1b;
+}
+/* Sets brand margins */
+.navbar .navbar-brand {
+    margin-left: 50px;
+}
+/* Sets brand and text color */
+.navbar .navbar-brand,
+.navbar .navbar-text {
+    color: rgba(255, 255, 255);
+    font-size: x-large;
+}
+/* Sets link color */
+.navbar .navbar-nav .nav-link {
+    color: rgba(255,255,255);
+    margin-right: 15px;
+    margin-right: 15px;
+}
+
+/* Sets color of active and hovered links */
+.navbar .nav-item.active .nav-link,
+.navbar .nav-item:focus .nav-link,
+.navbar .nav-item:hover .nav-link {
+    color:#03A9F4;
+    font-weight: 500;
+}
+
+/* Sets dropdown menu styling */
+.dropdown .dropdown-menu {
+    border: 1px solid black;
+}
+.dropdown .dropdown-item:hover {
+    color:#6200EE;
+}
+/*.dropdown .btn:hover {
+    background: cyan; 
+    color:rgb(143, 119, 119);
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.lab-footer {
+    height: 120px;
+    flex-shrink: none;
+    padding: 1rem 0;
+    color: #2F4F4F;
+    text-align: center;
+    border-top: .05rem solid #e5e5e5;
+}
+
+/* ==========================================================================
+   Home page
+   ========================================================================== */
+
+/* First row */
+.top-row {
+    margin-top: 5vh;
+}
+/* Banner image */
+.banner-img {
+    height: 40vh;
+    min-height: 300px;
+    background-image: url("../images/cellmap_crop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+/* GI network image */
+.home-img {
+    margin-top: 10vh;
+}
+
+/* ==========================================================================
+   404 page
+   ========================================================================== */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* ==========================================================================
+   Pricing page
+   ========================================================================== */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+    margin: 50px 0;
+}
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+}
