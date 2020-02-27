@@ -3,210 +3,344 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Course Recommendations</title>
+  <title>Course Recommendations</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <!-- Loads Bootstrap 4 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-    <!-- Custom CSS -->
-    <link href="../css/styles.css" rel="stylesheet">
+  <!-- Loads CSS -->
+  <link href="../css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
 
-    <!-- Custom Fonts -->
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Loads fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 
-    <!-- Using all of this for a bootstrap datatables -->
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">   
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" 
-    href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
-    <script type="text/javascript" 
-    src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" 
-    src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <!-- Using all of this for a bootstrap datatables -->
+  <!--<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">-->
+  <!--<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>-->
+  <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+    
+</head>
 
-    </head>
+<body>
+  <!-- Page Content -->
+  <div class="container">
 
-    <body>
-        <!-- Page Content -->
-        <div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="top-row row">
+      <div class="col-12">
+        <h1 class="page-header">Course Recommendations
+          <small></small>
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="LabMemberArea.html">Lab Member Home</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <hr class="large-break">
 
-            <!-- Page Heading/Breadcrumbs -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Course Recommendations
-                        <small></small>
-                    </h1>
-                    <ol class="breadcrumb">
-                        <li><a href="LabMemberArea.html">Lab Member Home</a>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <!-- /.row -->
-            <div class="row">
-            <div class="col-lg-12">
-                
+    <!-- /.row -->
+    <div class="row">
+      <div class="col-12">
+
         <!-- Navigation bar -->
         <div id="nav"></div>
         <script type="text/javascript" src="../js/header.js"></script>
 
-            <table id="example" class="display" cellspacing="0" width="100%">
-                <thead>
-                    <tr>
-                        <th>Course Name</th>
-                        <th>Professor</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <th>Course Name</th>
-                        <th>Professor</th>
-                        <th>Description</th>
-                </tfoot>
-                <tbody>
-                    <tr>
-                        <td>GCD8008: Mammalian Gene Transfer and Expression</td>
-                        <td>Scott McIvor</td>
-                        <td>I really enjoyed this class. It was mainly concerned with genetic engineering and covered a large range of topics and technologies. Coursework was limited to reading papers prior to each class (we were expected to participate and answer HW questions prior to class) and a course project which consisted of a mock NIH proposal. Each class had a guest lecturer who was an expert in the field and there was always time at the end of class to ask them questions. The class was very well taught and there was little busy work. Highly recommend for anyone who is interested in learning about our abilities to edit genomes.</td>
-                    </tr>
-                    <tr>
-                        <td>STAT 5601: Nonparametric Methods</td>
-                        <td>Chatterjee</td>
-                        <td>This was another course that I took knowing that I wouldn't have all of the essential background when I took it. Sometimes I was lost, but there was a good mix of topics. I especially liked that we were provided foundational/background information on why nonparametric methods are good tools and when and why to use them. There was very little math (basic calculus) and the grading system was very fair, we were allowed to drop multiple (though frequent) quizzes which allowed students (like me) who were not necessarily strong in all areas to take this course. Most of the applications were using non-parametric functions in R and being able to interpret the results. Graduate students didn't need to take the final, though were expected to complete a course project (could even be related to what you were working on) </td>
-                    </tr>
-                    <tr>
-                        <td>Bio 5361: Microbial genomics and Bioinformatics</td>
-                        <td>Khodursky and Wackett</td>
-                        <td>The presentation of this course was from a microbial geneticist perspective. The course content is pretty exhaustive. In addition to course work, there were ~15 suggested paper readings. Questions from these papers were asked in the quizzes. There were 5 quizzes, 3 exams and 3-4 assignments in the course. I think the course was pretty good. I could handle the course load but I saw half of the class drop the class . So think twice - gains are good but you have to put in equivalent effort. </td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>PBIO 5301: Plant Genomics</td>
-                        <td>Nevin Young</td>
-                        <td>This class mainly was concerned with the basic approaches taken in genomics in the context of plants. It was a good introduction that covered a wide range of topics such as how we sequence a genome, mapping synteny and creating phylogenic trees. It was taught well. It doesn't get into any of the details of implementations and attempted to do some basic perl programming.
-                        <br>
-                        <br>
-                        As Rob said, the class focused more on the application of tools than the implementation of them. Introduced a very wide range of different tools that are available across plant genomics; so many that I had trouble keeping all of them straight. Very interesting class though. 
-                        </td>
-                    </tr>
-                        <td>CSCI 5481: Computational Techniques for Genomics</td>
-                        <td>George Karypis or Rui Kuang </td>
-                        <td>(GK) This course covered a LOT of material. The actual biology behind the approaches is minimal and the course is mostly interested in implementation and what limits we face when creating software for biology. There were a few course projects that took a substantial amount of time as well as challenging tests. If you like to learn by doing, this course would be good for you.
-                        <br>
-                        <br>
-                        (RK) A lot of work, activities, and projects. Work intensive but projects were really interesting. Large focus on implementation of applications, flexible as to what you use to implement. At the end of the course we presented projects of our own design. The course voted for their favorite and the winner got a new printer I think. The prizes made people work a bit harder on their projects I think. I’ve heard that Rui is not as challenging as Karypis for this course. 
-                        <br>
-                        <br>
-                        (RK) There were 4 individual assignments, 3 group assignments, and a final project (individual and there were 4-5 options to choose from). It seemed to me that if you put sufficient effort, you can easily get a good grade in this course. 
-                        </td>
-                    </tr>
-                        <td>STAT 5101: Theory of Statistics I</td>
-                        <td>Yuhong Yang</td>
-                        <td>I have very mixed feelings about this course. I really did not like how the material was presented at all and attending lectures, I feel, did not help me learn at all. I hated taking this course while I was in it, but a few semesters later I still retain some of the important concepts that I ended up learning. It may be that I struggled learning that material at such a high level but I had to really do a lot of outside reading to finish most of the homeworks. I took the class pass/fail but a friend I was taking the course with got similar marks as I did (not spectacular) and ended up getting an A in the course. So, you'll likely learn a lot and can do well in the course as well. There were homeworks due every week and there was a lot of outside work but I did end up learning the basics of statistics.</td>
-                    </tr>
-                        <td>AGRO 8023: Evolution of Crop Plants</td>
-                        <td>Peter Morrell</td>
-                        <td>Initially I felt very out of place with this course. It was small and I was the only one that wasn't in Plant Science. We met twice a week and were expected to read between one and two articles a session (so ~4 a week) and the entire class was discussion around these papers. I really enjoyed this set-up and ended up getting really into a lot of the domestication literature. I would recommend this class if you are interested evolution or plant sciences in general.</td>
-                    </tr>
-                        <td>EEB 5042: Quantitative Genetics</td>
-                        <td>Ruth Shaw</td>
-                        <td>This course was an extensive introduction in the genetics that drive complex phenotypes. Most of the lectures were 'chalk talks' and we were also expected to read a couple papers to discuss over the semester. We had ~4-5 homework assignments that were basically word problems that were related to quantitative genetics. We started with a little history of how quantitative genetics emerged as a field and how the theory of population genetics related to quantitative genetics. We then learned the basic theories that hold under Hardy-Weinberg equilibrium. The rest of the semester was focused on deviations away from HW. I learned a lot about quantitative genetics and the overall class and instructor were good. The only criticism is that there was no clear grading structure. 
-                        <br>
-                        <br>
-                        Given that the material is very interesting--very theoretical, but still applicable to current genetics research--I was disappointed in this class. Firstly, as Rob mentioned, there was not a clear grading structure, which was particularly problematic because the instructor did not allow students to take the class pass-fail and I felt I was essentially competing with graduate students who are involved in quantitative genetics research. I visited the professor during her office hours and asked specifically how grades and their weights affected our final grade; she refused to answer me. Secondly, class time was not useful. While the overall structure of the lectures made sense, explanations were scattered and the professor was constantly erasing things written on the white board, writing things bottom-to-top and right-to-left, and my notes were useless.
+        <table id="example" class="display" cellspacing="0" width="100%">
+          <thead>
+            <tr>
+              <th>Course Name</th>
+              <th>Professor</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>GCD8008: Mammalian Gene Transfer and Expression</td>
+              <td>Scott McIvor</td>
+              <td>I really enjoyed this class. It was mainly concerned with genetic engineering and covered a large
+                range of topics and technologies. Coursework was limited to reading papers prior to each class (we were
+                expected to participate and answer HW questions prior to class) and a course project which consisted of
+                a mock NIH proposal. Each class had a guest lecturer who was an expert in the field and there was always
+                time at the end of class to ask them questions. The class was very well taught and there was little busy
+                work. Highly recommend for anyone who is interested in learning about our abilities to edit genomes.
+              </td>
+            </tr>
+            <tr>
+              <td>STAT 5601: Nonparametric Methods</td>
+              <td>Chatterjee</td>
+              <td>This was another course that I took knowing that I wouldn't have all of the essential background when
+                I took it. Sometimes I was lost, but there was a good mix of topics. I especially liked that we were
+                provided foundational/background information on why nonparametric methods are good tools and when and
+                why to use them. There was very little math (basic calculus) and the grading system was very fair, we
+                were allowed to drop multiple (though frequent) quizzes which allowed students (like me) who were not
+                necessarily strong in all areas to take this course. Most of the applications were using non-parametric
+                functions in R and being able to interpret the results. Graduate students didn't need to take the final,
+                though were expected to complete a course project (could even be related to what you were working on)
+              </td>
+            </tr>
+            <tr>
+              <td>Bio 5361: Microbial genomics and Bioinformatics</td>
+              <td>Khodursky and Wackett</td>
+              <td>The presentation of this course was from a microbial geneticist perspective. The course content is
+                pretty exhaustive. In addition to course work, there were ~15 suggested paper readings. Questions from
+                these papers were asked in the quizzes. There were 5 quizzes, 3 exams and 3-4 assignments in the course.
+                I think the course was pretty good. I could handle the course load but I saw half of the class drop the
+                class . So think twice - gains are good but you have to put in equivalent effort. </td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>PBIO 5301: Plant Genomics</td>
+              <td>Nevin Young</td>
+              <td>This class mainly was concerned with the basic approaches taken in genomics in the context of plants.
+                It was a good introduction that covered a wide range of topics such as how we sequence a genome, mapping
+                synteny and creating phylogenic trees. It was taught well. It doesn't get into any of the details of
+                implementations and attempted to do some basic perl programming.
+                <br>
+                <br>
+                As Rob said, the class focused more on the application of tools than the implementation of them.
+                Introduced a very wide range of different tools that are available across plant genomics; so many that I
+                had trouble keeping all of them straight. Very interesting class though.
+              </td>
+            </tr>
+            <td>CSCI 5481: Computational Techniques for Genomics</td>
+            <td>George Karypis or Rui Kuang </td>
+            <td>(GK) This course covered a LOT of material. The actual biology behind the approaches is minimal and the
+              course is mostly interested in implementation and what limits we face when creating software for biology.
+              There were a few course projects that took a substantial amount of time as well as challenging tests. If
+              you like to learn by doing, this course would be good for you.
+              <br>
+              <br>
+              (RK) A lot of work, activities, and projects. Work intensive but projects were really interesting. Large
+              focus on implementation of applications, flexible as to what you use to implement. At the end of the
+              course we presented projects of our own design. The course voted for their favorite and the winner got a
+              new printer I think. The prizes made people work a bit harder on their projects I think. I’ve heard that
+              Rui is not as challenging as Karypis for this course.
+              <br>
+              <br>
+              (RK) There were 4 individual assignments, 3 group assignments, and a final project (individual and there
+              were 4-5 options to choose from). It seemed to me that if you put sufficient effort, you can easily get a
+              good grade in this course.
+            </td>
+            </tr>
+            <td>STAT 5101: Theory of Statistics I</td>
+            <td>Yuhong Yang</td>
+            <td>I have very mixed feelings about this course. I really did not like how the material was presented at
+              all and attending lectures, I feel, did not help me learn at all. I hated taking this course while I was
+              in it, but a few semesters later I still retain some of the important concepts that I ended up learning.
+              It may be that I struggled learning that material at such a high level but I had to really do a lot of
+              outside reading to finish most of the homeworks. I took the class pass/fail but a friend I was taking the
+              course with got similar marks as I did (not spectacular) and ended up getting an A in the course. So,
+              you'll likely learn a lot and can do well in the course as well. There were homeworks due every week and
+              there was a lot of outside work but I did end up learning the basics of statistics.</td>
+            </tr>
+            <td>AGRO 8023: Evolution of Crop Plants</td>
+            <td>Peter Morrell</td>
+            <td>Initially I felt very out of place with this course. It was small and I was the only one that wasn't in
+              Plant Science. We met twice a week and were expected to read between one and two articles a session (so ~4
+              a week) and the entire class was discussion around these papers. I really enjoyed this set-up and ended up
+              getting really into a lot of the domestication literature. I would recommend this class if you are
+              interested evolution or plant sciences in general.</td>
+            </tr>
+            <td>EEB 5042: Quantitative Genetics</td>
+            <td>Ruth Shaw</td>
+            <td>This course was an extensive introduction in the genetics that drive complex phenotypes. Most of the
+              lectures were 'chalk talks' and we were also expected to read a couple papers to discuss over the
+              semester. We had ~4-5 homework assignments that were basically word problems that were related to
+              quantitative genetics. We started with a little history of how quantitative genetics emerged as a field
+              and how the theory of population genetics related to quantitative genetics. We then learned the basic
+              theories that hold under Hardy-Weinberg equilibrium. The rest of the semester was focused on deviations
+              away from HW. I learned a lot about quantitative genetics and the overall class and instructor were good.
+              The only criticism is that there was no clear grading structure.
+              <br>
+              <br>
+              Given that the material is very interesting--very theoretical, but still applicable to current genetics
+              research--I was disappointed in this class. Firstly, as Rob mentioned, there was not a clear grading
+              structure, which was particularly problematic because the instructor did not allow students to take the
+              class pass-fail and I felt I was essentially competing with graduate students who are involved in
+              quantitative genetics research. I visited the professor during her office hours and asked specifically how
+              grades and their weights affected our final grade; she refused to answer me. Secondly, class time was not
+              useful. While the overall structure of the lectures made sense, explanations were scattered and the
+              professor was constantly erasing things written on the white board, writing things bottom-to-top and
+              right-to-left, and my notes were useless.
 
-                        </td>
-                    </tr>
-                        <td>GCD 4151: Molecular Biology of Cancer</td>
-                        <td>Vivian Bardwell and David Largaespada</td>
-                        <td>This class covers all the major molecular players in cancer. The bulk of the course is spent learning about molecular pathways and how they produce the hallmarks of cancer, as well as characterizing the disease manifestations (different types of cancer, progression of metastasis, etc.). Additionally, it does a great job of simultaneously placing cancer in historical, research, and treatment/prevention contexts, all of which I found very interesting. The structure of the course is typical of introductory biology classes: it relies heavily on straight-up memorization of material from the text book and the grading is solely based on tests (exams every two weeks). This class is not particularly easy and the frequency of the exams means you need to stay on top of the material, but it is all manageable. I enjoyed the class, learned a lot about cancer, and learned a lot about cell biology. </td>
-                    </tr>
-                        <td>STAT3021: Intro to Probability Stat </td>
-                        <td></td>
-                        <td>This course was a standard Intro to Stats course. It was mostly derivations with very little applications. I wish I remembered the professors name because what I do remember about him was that I didn’t really mesh with his teaching style. </td>
-                    </tr>
-                        <td>BIOL4003: Genetics  </td>
-                        <td>Michael Simmons or Robert Brooke</td>
-                        <td>(MS) Good class for anyone who wants genetics background. Dr. Simmons is really smart and nice, although I think he’s retired now. The course covers a range of genetics from old mendelian to more recent topics. Meets 3 times a week.
-                        <br>
-                        <br>
-                        (RB) A very good course for people like me who didn't have background in biology / genetics. All students are divided in groups (7-8 students). Heavy coursework which includes two quizzes (one big, one short) and a group assignment each week, starting from week 2 or 3, two projects and a final exam. Lecture videos and slides were posted before the start of the class and students needed to study those to attend the class. Each class started with a quiz (apart from first 1/2 weeks), and then there was kind of review of lectures followed by group works on assignments / projects. The course was of moderate difficulty, but you need to do regular studies to get good grades. Though initial 3-4 weeks were hard for me, I enjoyed and learned a lot eventually. 
-                         </td>
-                    </tr>
-                        <td>MICB4131: Immunology </td>
-                        <td></td>
-                        <td>Class met twice a week in the evenings. No textbook; just scattered incomplete notes to follow along with. I really enjoyed the topics and the material was very interesting, however the professor I had assumed that we had a large base of previous knowledge and without a textbook or other materials keeping up was difficult but not impossible. This would probably not be the case with the professor who teaches it now. </td>
-                    </tr>
-                        <td>STAT3011: Intro Statistical Analysis </td>
-                        <td></td>
-                        <td>I liked this course because it was more applied than the 3021 class. This has a grad level version (STAT5021) which is Statistical Analysis. This class met 3 times a week with an additional discussion section. The discussion section was used to discuss R and how it could be applied to our homework. It was not a lab, but we still went over some background on how to use R. The lectures started pretty basic but by the end got to more useful topics. </td>
-                    </tr>
-                        <td>CSCI5461: Fun. Gen., Sys. Bio, and Bioinf </td>
-                        <td>Rui Kuang</td>
-                        <td>Focuses more on concepts behind implementation than on the actual implementation of biological tools. We did a number of paper presentations in class to show current literature topics and had a final project at the end of the semester on an implementation or use of available tools. Interesting class and good introduction to a lot of bioinformatics topics</td>
-                    </tr>
-                        <td>CSCI5109: Visualization </td>
-                        <td>Victoria Interrante</td>
-                        <td>Some interesting topics in the class, but overall I don’t think I got very much out of the class. Interesting visuals and demonstrations but not much I could apply to my own work. Class wasn’t very difficult and very little programming was needed. </td>
-                    </tr>
-                        <td>CSCI5707: Principles of DB Systems </td>
-                        <td>John Carlis</td>
-                        <td>Challenging class but it was very interesting. One of our textbooks wasn’t printed yet, so we got photocopied versions of the manuscript which we would need to copy if everyone in the group wanted to have their own copy. Projects were flexible so that we could work on things that interested us. </td>
-                    </tr>
-                        <td>BIOC5352: Biotechnology and Bioengineering for Biochemists </td>
-                        <td>Claudia Schmidt-Dannert</td>
-                        <td>This class focused on a wide range of applications of biotechnology in industry. It featured talks about different technologies as well as speakers from industry. The class uses a lot of heavy biochemistry, however, they provide a lot of sources so if you’re weak in an area it isn’t too difficult to follow. The end of semester pair project is a bioengineering project proposal. The professor has high expectations for this project so it was a little difficult but I learned a lot from the project. </td>
-                    </tr>
-                        <td>PUBH6450: Biostatistics I </td>
-                        <td>Bannerjee? or Julain Wolfson</td>
-                        <td>First of a series of two, I only took the first course though. The class includes a lab portion that teaches SAS. The labs aren’t very intensive but it was a good use of the program. The topics covered everything from the very basic to regression. All statistics were applied to biology related topics like medical studies, which made it a bit more interesting than abstract statistics.
-                        <br>
-                        <br>
-                        Saonli took the first 5 lectures and Julian continued for the rest. It should be a necessary course for anybody who does not have a good statistics background, but computational students should find the topics sufficiently easy, regardless. The lab works was optional and the TA's provided lab works online for everybody. There was assignments which used skills from lab works, and also there was 2 midterms and a final. Helped me to acquire knowledge or revise on topics like basic probability distributions, different types of hypothesis testing, multiple testing, ranksum test, linear regression etc. Julian recorded and uploaded class lectures himself which helped in case students miss some classes; also all necessary formulas were provided which was great
-                        </td>
-                    </tr>
-                        <td>CSCI5523:Introduction to Data Mining </td>
-                        <td>Vipin/Steinbach</td>
-                        <td>Interesting topics that are easily applicable to my work. Many of the assignments were busy work and unnecessarily long. Lots of assignments to apply the topics discussed in class, heavy on assignments at the end of the semester. However, in general, I think the class had useful information and topics. 
-                        <br>
-                        <br>
-                        One very good thing about this course is, it is not limited to students from computational background. Anybody can take this class as it discussed topics like basic data processing, classification, association analysis, clustering and anomaly detection from very conceptual point of view. No programming is necessary. The 5 assignments were a lot of handwritten works, and three projects which needed to run softwares (weka for example) to generate outputs and explain them. There were also two midterms and a final. 
-                        </td>
-                    </tr>
-                        <td>GCD8131: Advanced Genetics and Genomics </td>
-                        <td>David Greenstein</td>
-                        <td>Great and interesting survey of genetic/genomics topics. Focuses mostly on genetics and genetic applications. Meets 3 times a week and expects to read about 3 articles per lecture (so about 9 per week). So the class is a lot of paper reading, but you cover a wide range of genetics in a range of organisms. Semester ends with student presentations of a student chosen paper. </td>
-                    </tr>
-                        <td>CSCI 5512: Artif Intelligence II </td>
-                        <td>Arindam Banerjee</td>
-                        <td>Probably one of the best classes to learn about statistics that I have taken so far. Bayesian Networks, Inference, Decision Trees/Lists, Regression, Game Theory, Learning are all covered in the class. The class is fairly tough, with programming assignments taking a significant amount of time, but it's worth it</td>
-                    </tr>
-                        <td>GCD 8073: Adv Human Genetics </td>
-                        <td>Michael Koob</td>
-                        <td>A bit of a waste of time unless you want to learn about diseases that affect humans. Most of the genetics was really basic stuff. Class is geared a bit towards genetic counselors rather than geneticist</td>
-                    </tr>
-                        <td>CSCI 5521: Introduction to Machine Learning </td>
-                        <td>Rui Kuang</td>
-                        <td>I enjoyed the course even though it is the toughest course I have taken in my first year. There were 5 assignments (party written, and mostly programming using matlab), and a final exam which was particularly tough ( Rui told us that it is the toughest exam he has ever written). Notable topics are Gaussian learning, dimensionality reduction (PCA, LDA etc.), clustering (generalized EM, K-means), logistic regression, Neural Network (Perceptron, multilayer, Deep/Convolutional, RBF), Kernel Machines (Kernel Perceptron, PCA and SVM), Bayesian Estimation and Graphical Models. Familiarity with linear algebra is required for this course, and for students without computational background specifically, taking "CSCI 5523: Intro to Data Mining" first may help</td>
-                </tbody>
-            </table>
-            </div>
-            </div>
-          <script>
-          $(document).ready(function(){
-              $('#example').dataTable({
-                "iDisplayLength": 20,
-                });
-          });
-          </script>
-          <script type="text/javascript" src="/js/footer.js"></script>
-    </body>
+            </td>
+            </tr>
+            <td>GCD 4151: Molecular Biology of Cancer</td>
+            <td>Vivian Bardwell and David Largaespada</td>
+            <td>This class covers all the major molecular players in cancer. The bulk of the course is spent learning
+              about molecular pathways and how they produce the hallmarks of cancer, as well as characterizing the
+              disease manifestations (different types of cancer, progression of metastasis, etc.). Additionally, it does
+              a great job of simultaneously placing cancer in historical, research, and treatment/prevention contexts,
+              all of which I found very interesting. The structure of the course is typical of introductory biology
+              classes: it relies heavily on straight-up memorization of material from the text book and the grading is
+              solely based on tests (exams every two weeks). This class is not particularly easy and the frequency of
+              the exams means you need to stay on top of the material, but it is all manageable. I enjoyed the class,
+              learned a lot about cancer, and learned a lot about cell biology. </td>
+            </tr>
+            <td>STAT3021: Intro to Probability Stat </td>
+            <td></td>
+            <td>This course was a standard Intro to Stats course. It was mostly derivations with very little
+              applications. I wish I remembered the professors name because what I do remember about him was that I
+              didn’t really mesh with his teaching style. </td>
+            </tr>
+            <td>BIOL4003: Genetics </td>
+            <td>Michael Simmons or Robert Brooke</td>
+            <td>(MS) Good class for anyone who wants genetics background. Dr. Simmons is really smart and nice, although
+              I think he’s retired now. The course covers a range of genetics from old mendelian to more recent topics.
+              Meets 3 times a week.
+              <br>
+              <br>
+              (RB) A very good course for people like me who didn't have background in biology / genetics. All students
+              are divided in groups (7-8 students). Heavy coursework which includes two quizzes (one big, one short) and
+              a group assignment each week, starting from week 2 or 3, two projects and a final exam. Lecture videos and
+              slides were posted before the start of the class and students needed to study those to attend the class.
+              Each class started with a quiz (apart from first 1/2 weeks), and then there was kind of review of lectures
+              followed by group works on assignments / projects. The course was of moderate difficulty, but you need to
+              do regular studies to get good grades. Though initial 3-4 weeks were hard for me, I enjoyed and learned a
+              lot eventually.
+            </td>
+            </tr>
+            <td>MICB4131: Immunology </td>
+            <td></td>
+            <td>Class met twice a week in the evenings. No textbook; just scattered incomplete notes to follow along
+              with. I really enjoyed the topics and the material was very interesting, however the professor I had
+              assumed that we had a large base of previous knowledge and without a textbook or other materials keeping
+              up was difficult but not impossible. This would probably not be the case with the professor who teaches it
+              now. </td>
+            </tr>
+            <td>STAT3011: Intro Statistical Analysis </td>
+            <td></td>
+            <td>I liked this course because it was more applied than the 3021 class. This has a grad level version
+              (STAT5021) which is Statistical Analysis. This class met 3 times a week with an additional discussion
+              section. The discussion section was used to discuss R and how it could be applied to our homework. It was
+              not a lab, but we still went over some background on how to use R. The lectures started pretty basic but
+              by the end got to more useful topics. </td>
+            </tr>
+            <td>CSCI5461: Fun. Gen., Sys. Bio, and Bioinf </td>
+            <td>Rui Kuang</td>
+            <td>Focuses more on concepts behind implementation than on the actual implementation of biological tools. We
+              did a number of paper presentations in class to show current literature topics and had a final project at
+              the end of the semester on an implementation or use of available tools. Interesting class and good
+              introduction to a lot of bioinformatics topics</td>
+            </tr>
+            <td>CSCI5109: Visualization </td>
+            <td>Victoria Interrante</td>
+            <td>Some interesting topics in the class, but overall I don’t think I got very much out of the class.
+              Interesting visuals and demonstrations but not much I could apply to my own work. Class wasn’t very
+              difficult and very little programming was needed. </td>
+            </tr>
+            <td>CSCI5707: Principles of DB Systems </td>
+            <td>John Carlis</td>
+            <td>Challenging class but it was very interesting. One of our textbooks wasn’t printed yet, so we got
+              photocopied versions of the manuscript which we would need to copy if everyone in the group wanted to have
+              their own copy. Projects were flexible so that we could work on things that interested us. </td>
+            </tr>
+            <td>BIOC5352: Biotechnology and Bioengineering for Biochemists </td>
+            <td>Claudia Schmidt-Dannert</td>
+            <td>This class focused on a wide range of applications of biotechnology in industry. It featured talks about
+              different technologies as well as speakers from industry. The class uses a lot of heavy biochemistry,
+              however, they provide a lot of sources so if you’re weak in an area it isn’t too difficult to follow. The
+              end of semester pair project is a bioengineering project proposal. The professor has high expectations for
+              this project so it was a little difficult but I learned a lot from the project. </td>
+            </tr>
+            <td>PUBH6450: Biostatistics I </td>
+            <td>Bannerjee? or Julain Wolfson</td>
+            <td>First of a series of two, I only took the first course though. The class includes a lab portion that
+              teaches SAS. The labs aren’t very intensive but it was a good use of the program. The topics covered
+              everything from the very basic to regression. All statistics were applied to biology related topics like
+              medical studies, which made it a bit more interesting than abstract statistics.
+              <br>
+              <br>
+              Saonli took the first 5 lectures and Julian continued for the rest. It should be a necessary course for
+              anybody who does not have a good statistics background, but computational students should find the topics
+              sufficiently easy, regardless. The lab works was optional and the TA's provided lab works online for
+              everybody. There was assignments which used skills from lab works, and also there was 2 midterms and a
+              final. Helped me to acquire knowledge or revise on topics like basic probability distributions, different
+              types of hypothesis testing, multiple testing, ranksum test, linear regression etc. Julian recorded and
+              uploaded class lectures himself which helped in case students miss some classes; also all necessary
+              formulas were provided which was great
+            </td>
+            </tr>
+            <td>CSCI5523:Introduction to Data Mining </td>
+            <td>Vipin/Steinbach</td>
+            <td>Interesting topics that are easily applicable to my work. Many of the assignments were busy work and
+              unnecessarily long. Lots of assignments to apply the topics discussed in class, heavy on assignments at
+              the end of the semester. However, in general, I think the class had useful information and topics.
+              <br>
+              <br>
+              One very good thing about this course is, it is not limited to students from computational background.
+              Anybody can take this class as it discussed topics like basic data processing, classification, association
+              analysis, clustering and anomaly detection from very conceptual point of view. No programming is
+              necessary. The 5 assignments were a lot of handwritten works, and three projects which needed to run
+              softwares (weka for example) to generate outputs and explain them. There were also two midterms and a
+              final.
+            </td>
+            </tr>
+            <td>GCD8131: Advanced Genetics and Genomics </td>
+            <td>David Greenstein</td>
+            <td>Great and interesting survey of genetic/genomics topics. Focuses mostly on genetics and genetic
+              applications. Meets 3 times a week and expects to read about 3 articles per lecture (so about 9 per week).
+              So the class is a lot of paper reading, but you cover a wide range of genetics in a range of organisms.
+              Semester ends with student presentations of a student chosen paper. </td>
+            </tr>
+            <td>CSCI 5512: Artif Intelligence II </td>
+            <td>Arindam Banerjee</td>
+            <td>Probably one of the best classes to learn about statistics that I have taken so far. Bayesian Networks,
+              Inference, Decision Trees/Lists, Regression, Game Theory, Learning are all covered in the class. The class
+              is fairly tough, with programming assignments taking a significant amount of time, but it's worth it</td>
+            </tr>
+            <td>GCD 8073: Adv Human Genetics </td>
+            <td>Michael Koob</td>
+            <td>A bit of a waste of time unless you want to learn about diseases that affect humans. Most of the
+              genetics was really basic stuff. Class is geared a bit towards genetic counselors rather than geneticist
+            </td>
+            </tr>
+            <td>CSCI 5521: Introduction to Machine Learning </td>
+            <td>Rui Kuang</td>
+            <td>I enjoyed the course even though it is the toughest course I have taken in my first year. There were 5
+              assignments (party written, and mostly programming using matlab), and a final exam which was particularly
+              tough ( Rui told us that it is the toughest exam he has ever written). Notable topics are Gaussian
+              learning, dimensionality reduction (PCA, LDA etc.), clustering (generalized EM, K-means), logistic
+              regression, Neural Network (Perceptron, multilayer, Deep/Convolutional, RBF), Kernel Machines (Kernel
+              Perceptron, PCA and SVM), Bayesian Estimation and Graphical Models. Familiarity with linear algebra is
+              required for this course, and for students without computational background specifically, taking "CSCI
+              5523: Intro to Data Mining" first may help</td>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $('#example').dataTable({
+          "iDisplayLength": 20,
+        });
+      });
+    </script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+</body>
 
 </html>

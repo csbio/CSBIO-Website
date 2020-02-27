@@ -3,76 +3,102 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Group Meeting</title>
+  <title>Group Meeting</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <!-- Loads Bootstrap 4 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-    <!-- Custom CSS -->
-    <link href="../css/styles.css" rel="stylesheet">
+  <!-- Loads CSS -->
+  <link href="../css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
 
-    <!-- Custom Fonts -->
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Loads fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 
-    <!-- Using all of this for a bootstrap datatables -->
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">   
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
-    <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <!-- Plugin to sort by date on data table -->
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
-    <script type="text/javascript" src="http://cdn.datatables.net/plug-ins/1.10.12/sorting/datetime-moment.js"></script>
+  <!-- Using all of this for a bootstrap datatables -->
+  <!--<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">-->
+  <!--<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>-->
+  <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 
-    </head>
+  <!-- Plugin to sort by date on data table -->
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+  <script type="text/javascript" src="http://cdn.datatables.net/plug-ins/1.10.12/sorting/datetime-moment.js"></script>
 
-    <body>
-        <!-- Page Content -->
-        <div class="container">
-            <!-- Page Heading/Breadcrumbs -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Group Meeting Schedule
-                        <small></small>
-                    </h1>
-                    <ol class="breadcrumb">
-                        <li><a href="LabMemberArea.html">Lab Member Home</a>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <!-- /.row -->
-            <div class="row">
-            <div class="col-lg-12">
-                
+</head>
+
+<body>
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="top-row row">
+      <div class="col-12">
+        <h1 class="page-header">Group Meeting Schedule
+          <small></small>
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="LabMemberArea.html">Lab Member Home</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <hr class="large-break">
+
+    <!-- /.row -->
+    <div class="row">
+      <div class="col-12">
+
         <!-- Navigation bar -->
         <div id="nav"></div>
         <script type="text/javascript" src="../js/header.js"></script>
 
-          <a href="https://docs.google.com/spreadsheets/d/1_8SY0ujHpVK02cL45D6pdduVwBCFEZCvrqj4aDJ9Y8o/edit?usp=sharing">Schedule Edit Link</a><br>
+        <a href="https://docs.google.com/spreadsheets/d/1HyEs9uynzhUjO9UmpO_EZSEd0SZb3sugJNUbVuLBTCc/edit?usp=sharing">Schedule
+          Edit Link</a><br>
 
-           <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKagIFqmLV3bAwK9C3pQkDGb2bJLZZFBaPMrcMS1-BjjQgMeVKyGai_lv6rmhxPjk8cUreu5idpuKe/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false" width=600 height=600></iframe>
-           <p><hr>
-           <a href="https://docs.google.com/document/d/1ybzPDJv3HgEjDnWD6z7JOZj0o5-xI7tnWWV-wnRXGA0/edit?usp=sharing">Paper List Edit Link</a><br>
-           <iframe src="https://docs.google.com/document/d/e/2PACX-1vR2j_S3fYjxwl-7Q4AfVRGE6hxH4_xDykXWOss5SffufWQgXfU4KGlNBhPG7eJMn1IMDI1_-KSaAIJO/pub?embedded=true" width=800 height=800></iframe>
-            </div>
-            </div>
-          <script>
-          $(document).ready(function(){
-              $.fn.dataTable.moment( 'MM/DD/YYYY' );
-              $('#example').dataTable({
-                "iDisplayLength": 50,
-                "order": [[ 0, "asc" ]]
-                });
-          });
-          </script>
-          <script type="text/javascript" src="../js/footer.js"></script>
-    </body>
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLBtk4ADOPIrN0ZAlGgIBd2vsNp_GJtmMq5c_0vcoy4oluz6ZLwUoC_gv6EJe8ENhdyEOZidPNFOXR/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"
+         width=600 height=600>
+        </iframe>
+        
+        <p>
+          <hr>
+          <a href="https://docs.google.com/document/d/1ybzPDJv3HgEjDnWD6z7JOZj0o5-xI7tnWWV-wnRXGA0/edit?usp=sharing">Paper
+            List Edit Link</a><br>
+          <iframe
+            src="https://docs.google.com/document/d/e/2PACX-1vR2j_S3fYjxwl-7Q4AfVRGE6hxH4_xDykXWOss5SffufWQgXfU4KGlNBhPG7eJMn1IMDI1_-KSaAIJO/pub?embedded=true"
+            width=800 height=800></iframe>
+      </div>
+    </div>
+    <script>  
+      $(document).ready(function () {
+        $.fn.dataTable.moment('MM/DD/YYYY');
+        $('#example').dataTable({
+          "iDisplayLength": 50,
+          "order": [[0, "asc"]]
+        });
+      });
+    </script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+</body>
 
 </html>

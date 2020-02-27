@@ -3,132 +3,407 @@
 
 <head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <title>Lab Member Area</title>
+  <title>Lab Member Area</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <!-- Loads Bootstrap 4 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-    <!-- Custom CSS -->
-    <link href="../css/styles.css" rel="stylesheet">
+  <!-- Loads CSS -->
+  <link href="../css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css">
 
-    <!-- Custom Fonts -->
-    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Loads fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
 
-    <!-- Using all of this for a bootstrap datatables -->
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">   
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" 
-    href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
-    <script type="text/javascript" 
-    src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" 
-    src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <!-- Using all of this for a bootstrap datatables -->
+  <!--<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">-->
+  <!--<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>-->
+  <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript" language="javascript"
+    src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
 
-    </head>
+</head>
 
-    <body>
-        <!-- Page Content -->
-        <div class="container">
+<body>
+  <!-- Page Content -->
+  <div class="container">
 
-            <!-- Page Heading/Breadcrumbs -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Servers and Workstations
-                        <small></small>
-                    </h1>
-                    <ol class="breadcrumb">
-                        <li><a href="LabMemberArea.html">Lab Member Home</a>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <!-- /.row -->
-            <div class="row">
-            <div class="col-lg-12">
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="top-row row">
+      <div class="col-12">
+        <h1 class="page-header">Servers and Workstations
+          <small></small>
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="LabMemberArea.html">Lab Member Home</a>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <!-- /.row -->
+    <div class="row">
+      <div class="col-12">
 
         <!-- Navigation bar -->
         <div id="nav"></div>
         <script type="text/javascript" src="../js/header.js"></script>
 
-            <table id="example" class="display" cellspacing="0" width="100%">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Cores</th>
-                        <th>Memory</th>
-                        <th>OS</th>
-                        <th>Type</th>
-                        <th>Notes</th>
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <th>Name</th>
-                        <th>Threads</th>
-                        <th>Memory</th>
-                        <th>OS</th>
-                        <th>Type</th>
-                        <th>Notes</th>
-                </tfoot>
-                <tbody>
-                    <tr> <td>darwin</td>        <td>08</td> <td>32 GB</td>  <td>Ubuntu 12.04</td>   <td>Server</td>      <td>offline?</td> </tr>
-                    <tr> <td>mendel</td>        <td>08</td> <td>32 GB</td>  <td>Ubuntu 12.04</td>   <td>Server</td>      <td>offline?</td> </tr>
-                    <tr> <td>ohno</td>          <td>12</td> <td>96 GB</td>  <td>Ubuntu 16.04.6</td> <td>Server</td>      <td></td> </tr>
-                    <tr> <td>fisher</td>        <td>12</td> <td>96 GB</td>  <td>Ubuntu 16.04.6</td> <td>Server</td>      <td></td> </tr>
-                    <tr> <td>morgan</td>        <td>32</td> <td>194 GB</td> <td>Ubuntu 14.04.6</td> <td>Server</td>      <td></td> </tr>
-                    <tr> <td>mcclintock</td>    <td>32</td> <td>194 GB</td> <td>Ubuntu 16.04.6</td> <td>Server</td>      <td></td> </tr>
-                    <tr> <td>lovelace</td>      <td>24</td> <td>126 GB</td> <td>Ubuntu 16.04.3</td> <td>Server</td>      <td>Webserver</td> </tr>
-                    <tr> <td>crick</td>         <td>04</td> <td>6 GB</td>   <td>SunOS 5.11?</td>    <td>Storage</td>     <td>/project/csbio (live)</td> </tr>
-                    <tr> <td>watson</td>        <td>04</td> <td>6 GB</td>   <td>SunOS 5.11?</td>    <td>Storage</td>     <td>/project/csbio (off-site?)</td> </tr>
-                    <tr> <td>franklin</td>      <td>08</td> <td>94 GB</td>  <td>NA</td>             <td>Server</td>      <td>retired / TBD</td> </tr>
-                    <tr> <td>helix22</td>       <td>08</td> <td>64 GB</td>  <td>Ubuntu 16.04.6</td> <td>Workstation</td> <td>Xiaotong</td> </tr>
-                    <tr> <td>helix21</td>       <td>08</td> <td>64 GB</td>  <td>Ubuntu 16.04.6</td> <td>Workstation</td> <td>Ben</td> </tr>
-                    <tr> <td>helix20</td>       <td>08</td> <td>64 GB</td>  <td>Ubuntu 18.04.2</td> <td>Workstation</td> <td>Mahfuz</td> </tr>
-                    <tr> <td>helix19</td>       <td>08</td> <td>64 GB</td>  <td>Ubuntu 16.04.6</td> <td>Workstation</td> <td>Henry</td> </tr>
-                    <tr> <td>helix18</td>       <td>08</td> <td>64 GB</td>  <td>Ubuntu 16.04.6</td> <td>Workstation</td> <td>Wen</td> </tr>
-                    <tr> <td>helix17</td>       <td>08</td> <td>64 GB</td>  <td>Ubuntu 16.04</td>   <td>Workstation</td> <td>in storage (skype room)</td> </tr>
-                    <tr> <td>helix16</td>       <td>08</td> <td>64 GB</td>  <td>Ubuntu 16.04.6</td> <td>Workstation</td> <td>Justin</td> </tr>
-                    <tr> <td>helix15</td>       <td>08</td> <td>64 GB</td>  <td>Ubuntu 16.04.6</td> <td>Workstation</td> <td>Kevin</td> </tr>
-                    <tr> <td>helix14</td>       <td>08</td> <td>64 GB</td>  <td>Ubuntu 16.04.6</td> <td>Workstation</td> <td>Hamid</td> </tr>
-                    <tr> <td>helix13</td>       <td>08</td> <td>64 GB</td>  <td>NA</td>             <td>Workstation</td> <td>in storage (skype room)</td> </tr>
-                    <tr> <td>helix11</td>       <td>08</td> <td>64 GB</td>  <td>Ubuntu 14.04</td>   <td>Workstation</td> <td>in storage (skype room)</td> </tr>
-                    <tr> <td>helix12</td>       <td>08</td> <td>64 GB</td>  <td>Windows 7</td>      <td>Workstation</td> <td>open bench</td> </tr>
-                    <tr> <td>helix09</td>       <td>00</td> <td>?</td>      <td>Ubuntu 16.04.5</td> <td>Workstation</td> <td>Ryan, busted</td> </tr>
-                    <tr> <td>helix08</td>       <td>00</td> <td>?</td>      <td>Windows 10</td>     <td>Workstation</td> <td>Skype Room</td> </tr>
-                    <tr> <td>helix07</td>       <td>00</td> <td>?</td>      <td>NA</td>             <td>Workstation</td> <td>in storage</td> </tr>
-                    <tr> <td>helix06</td>       <td>00</td> <td>?</td>      <td>NA</td>             <td>Workstation</td> <td>in storage</td> </tr>
-                    <tr> <td>helix04</td>       <td>00</td> <td>?</td>      <td>NA</td>             <td>Workstation</td> <td>in storage</td> </tr>
-                    <tr> <td>helix03</td>       <td>00</td> <td>?</td>      <td>NA</td>             <td>Workstation</td> <td>in storage</td> </tr>
-                    <tr> <td>helix02</td>       <td>00</td> <td>?</td>      <td>NA</td>             <td>Workstation</td> <td>in storage</td> </tr>
-                    <tr> <td>helix01</td>       <td>00</td> <td>?</td>      <td>NA</td>             <td>Workstation</td> <td>in storage</td> </tr>
-                    <tr> <td>pauling</td>       <td>00</td> <td>?</td>      <td>NA</td>             <td>Workstation</td> <td>imac, in storage</td> </tr>
-                    <tr> <td>golgi</td>         <td>02</td> <td>3 GB</td>   <td>NA</td>             <td>Cluster</td>     <td>racked, offline</td> </tr>
-                    <tr> <td>mitochondrion</td> <td>02</td> <td>3 GB</td>   <td>NA</td>             <td>Cluster</td>     <td>racked, offline</td> </tr>
-                    <tr> <td>nucleus</td>       <td>02</td> <td>3 GB</td>   <td>NA</td>             <td>Cluster</td>     <td>racked, offline</td> </tr>
-                    <tr> <td>peroxisome</td>    <td>02</td> <td>3 GB</td>   <td>NA</td>             <td>Cluster</td>     <td>racked, offline</td> </tr>
-                    <tr> <td>centrosome</td>    <td>02</td> <td>3 GB</td>   <td>NA</td>             <td>Cluster</td>     <td>racked, offline</td> </tr>
-                    <tr> <td>cytoplasm</td>     <td>02</td> <td>3 GB</td>   <td>NA</td>             <td>Cluster</td>     <td>racked, offline</td> </tr>
-                    <tr> <td>ribosome</td>      <td>02</td> <td>3 GB</td>   <td>NA</td>             <td>Cluster</td>     <td>racked, offline</td> </tr>
-                    <tr> <td>vacuole</td>       <td>02</td> <td>3 GB</td>   <td>NA</td>             <td>Cluster</td>     <td>racked, offline</td> </tr>
-                </tbody>
-            </table>
-            </div>
-            </div>
-          <script>
-          $(document).ready(function(){
-              $('#example').dataTable({
-                "iDisplayLength": 50,
-                "order": [[ 1, "desc" ]]
-                });
-          });
-          </script>
-          <script type="text/javascript" src="/js/footer.js"></script>
-    </body>
+        <table id="example" class="display" cellspacing="0" width="100%">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Cores</th>
+              <th>Memory</th>
+              <th>OS</th>
+              <th>Type</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>darwin</td>
+              <td>08</td>
+              <td>32 GB</td>
+              <td>Ubuntu 12.04</td>
+              <td>Server</td>
+              <td>offline?</td>
+            </tr>
+            <tr>
+              <td>mendel</td>
+              <td>08</td>
+              <td>32 GB</td>
+              <td>Ubuntu 12.04</td>
+              <td>Server</td>
+              <td>offline?</td>
+            </tr>
+            <tr>
+              <td>ohno</td>
+              <td>12</td>
+              <td>96 GB</td>
+              <td>Ubuntu 16.04.6</td>
+              <td>Server</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>fisher</td>
+              <td>12</td>
+              <td>96 GB</td>
+              <td>Ubuntu 16.04.6</td>
+              <td>Server</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>morgan</td>
+              <td>32</td>
+              <td>194 GB</td>
+              <td>Ubuntu 14.04.6</td>
+              <td>Server</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>mcclintock</td>
+              <td>32</td>
+              <td>194 GB</td>
+              <td>Ubuntu 16.04.6</td>
+              <td>Server</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>lovelace</td>
+              <td>24</td>
+              <td>126 GB</td>
+              <td>Ubuntu 16.04.3</td>
+              <td>Server</td>
+              <td>Webserver</td>
+            </tr>
+            <tr>
+              <td>crick</td>
+              <td>04</td>
+              <td>6 GB</td>
+              <td>SunOS 5.11?</td>
+              <td>Storage</td>
+              <td>/project/csbio (live)</td>
+            </tr>
+            <tr>
+              <td>watson</td>
+              <td>04</td>
+              <td>6 GB</td>
+              <td>SunOS 5.11?</td>
+              <td>Storage</td>
+              <td>/project/csbio (off-site?)</td>
+            </tr>
+            <tr>
+              <td>franklin</td>
+              <td>08</td>
+              <td>94 GB</td>
+              <td>NA</td>
+              <td>Server</td>
+              <td>retired / TBD</td>
+            </tr>
+            <tr>
+              <td>helix22</td>
+              <td>08</td>
+              <td>64 GB</td>
+              <td>Ubuntu 16.04.6</td>
+              <td>Workstation</td>
+              <td>Xiaotong</td>
+            </tr>
+            <tr>
+              <td>helix21</td>
+              <td>08</td>
+              <td>64 GB</td>
+              <td>Ubuntu 16.04.6</td>
+              <td>Workstation</td>
+              <td>Ben</td>
+            </tr>
+            <tr>
+              <td>helix20</td>
+              <td>08</td>
+              <td>64 GB</td>
+              <td>Ubuntu 18.04.2</td>
+              <td>Workstation</td>
+              <td>Mahfuz</td>
+            </tr>
+            <tr>
+              <td>helix19</td>
+              <td>08</td>
+              <td>64 GB</td>
+              <td>Ubuntu 16.04.6</td>
+              <td>Workstation</td>
+              <td>Henry</td>
+            </tr>
+            <tr>
+              <td>helix18</td>
+              <td>08</td>
+              <td>64 GB</td>
+              <td>Ubuntu 16.04.6</td>
+              <td>Workstation</td>
+              <td>Wen</td>
+            </tr>
+            <tr>
+              <td>helix17</td>
+              <td>08</td>
+              <td>64 GB</td>
+              <td>Ubuntu 16.04</td>
+              <td>Workstation</td>
+              <td>in storage (skype room)</td>
+            </tr>
+            <tr>
+              <td>helix16</td>
+              <td>08</td>
+              <td>64 GB</td>
+              <td>Ubuntu 16.04.6</td>
+              <td>Workstation</td>
+              <td>Justin</td>
+            </tr>
+            <tr>
+              <td>helix15</td>
+              <td>08</td>
+              <td>64 GB</td>
+              <td>Ubuntu 16.04.6</td>
+              <td>Workstation</td>
+              <td>Kevin</td>
+            </tr>
+            <tr>
+              <td>helix14</td>
+              <td>08</td>
+              <td>64 GB</td>
+              <td>Ubuntu 16.04.6</td>
+              <td>Workstation</td>
+              <td>Hamid</td>
+            </tr>
+            <tr>
+              <td>helix13</td>
+              <td>08</td>
+              <td>64 GB</td>
+              <td>NA</td>
+              <td>Workstation</td>
+              <td>in storage (skype room)</td>
+            </tr>
+            <tr>
+              <td>helix11</td>
+              <td>08</td>
+              <td>64 GB</td>
+              <td>Ubuntu 14.04</td>
+              <td>Workstation</td>
+              <td>in storage (skype room)</td>
+            </tr>
+            <tr>
+              <td>helix12</td>
+              <td>08</td>
+              <td>64 GB</td>
+              <td>Windows 7</td>
+              <td>Workstation</td>
+              <td>open bench</td>
+            </tr>
+            <tr>
+              <td>helix09</td>
+              <td>00</td>
+              <td>?</td>
+              <td>Ubuntu 16.04.5</td>
+              <td>Workstation</td>
+              <td>Ryan, busted</td>
+            </tr>
+            <tr>
+              <td>helix08</td>
+              <td>00</td>
+              <td>?</td>
+              <td>Windows 10</td>
+              <td>Workstation</td>
+              <td>Skype Room</td>
+            </tr>
+            <tr>
+              <td>helix07</td>
+              <td>00</td>
+              <td>?</td>
+              <td>NA</td>
+              <td>Workstation</td>
+              <td>in storage</td>
+            </tr>
+            <tr>
+              <td>helix06</td>
+              <td>00</td>
+              <td>?</td>
+              <td>NA</td>
+              <td>Workstation</td>
+              <td>in storage</td>
+            </tr>
+            <tr>
+              <td>helix04</td>
+              <td>00</td>
+              <td>?</td>
+              <td>NA</td>
+              <td>Workstation</td>
+              <td>in storage</td>
+            </tr>
+            <tr>
+              <td>helix03</td>
+              <td>00</td>
+              <td>?</td>
+              <td>NA</td>
+              <td>Workstation</td>
+              <td>in storage</td>
+            </tr>
+            <tr>
+              <td>helix02</td>
+              <td>00</td>
+              <td>?</td>
+              <td>NA</td>
+              <td>Workstation</td>
+              <td>in storage</td>
+            </tr>
+            <tr>
+              <td>helix01</td>
+              <td>00</td>
+              <td>?</td>
+              <td>NA</td>
+              <td>Workstation</td>
+              <td>in storage</td>
+            </tr>
+            <tr>
+              <td>pauling</td>
+              <td>00</td>
+              <td>?</td>
+              <td>NA</td>
+              <td>Workstation</td>
+              <td>imac, in storage</td>
+            </tr>
+            <tr>
+              <td>golgi</td>
+              <td>02</td>
+              <td>3 GB</td>
+              <td>NA</td>
+              <td>Cluster</td>
+              <td>racked, offline</td>
+            </tr>
+            <tr>
+              <td>mitochondrion</td>
+              <td>02</td>
+              <td>3 GB</td>
+              <td>NA</td>
+              <td>Cluster</td>
+              <td>racked, offline</td>
+            </tr>
+            <tr>
+              <td>nucleus</td>
+              <td>02</td>
+              <td>3 GB</td>
+              <td>NA</td>
+              <td>Cluster</td>
+              <td>racked, offline</td>
+            </tr>
+            <tr>
+              <td>peroxisome</td>
+              <td>02</td>
+              <td>3 GB</td>
+              <td>NA</td>
+              <td>Cluster</td>
+              <td>racked, offline</td>
+            </tr>
+            <tr>
+              <td>centrosome</td>
+              <td>02</td>
+              <td>3 GB</td>
+              <td>NA</td>
+              <td>Cluster</td>
+              <td>racked, offline</td>
+            </tr>
+            <tr>
+              <td>cytoplasm</td>
+              <td>02</td>
+              <td>3 GB</td>
+              <td>NA</td>
+              <td>Cluster</td>
+              <td>racked, offline</td>
+            </tr>
+            <tr>
+              <td>ribosome</td>
+              <td>02</td>
+              <td>3 GB</td>
+              <td>NA</td>
+              <td>Cluster</td>
+              <td>racked, offline</td>
+            </tr>
+            <tr>
+              <td>vacuole</td>
+              <td>02</td>
+              <td>3 GB</td>
+              <td>NA</td>
+              <td>Cluster</td>
+              <td>racked, offline</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $('#example').dataTable({
+          "iDisplayLength": 50,
+          "order": [[1, "desc"]]
+        });
+      });
+    </script>
+    <script type="text/javascript" src="../js/footer.js"></script>
+</body>
 
 </html>
